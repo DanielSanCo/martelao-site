@@ -13,7 +13,6 @@ const Eletrica = () => {
                     nome={item.nome}
                     codigo={item.codigo}
                     preco={item.preco}
-                    precoPix={item.precoPix}
                 />
             ))}
         </div>
