@@ -1,0 +1,15 @@
+.nav {
+    width: 100vw;
+    height: 40px;
+    background-color: azure;
+    box-shadow: 1px 1px 5px black;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.eachItem {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}

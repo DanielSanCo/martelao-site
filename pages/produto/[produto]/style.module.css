@@ -1,0 +1,65 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prodArea {
+    width: 80%;
+    height: 550px;
+    border-radius: 15px;
+    background-color: azure;
+    box-shadow: 1px 1px 5px rgb(126, 126, 126);
+    display: flex;
+    align-items: center;
+}
+.imgArea {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img {
+    width: 90%;
+    border: 1px solid black;
+}
+.miniImgs {
+    height: 60px;
+    width: 80%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.img1, .img2, .img3 {
+    height: 60px;
+}
+.miniImg {
+    height: 100%;
+    display: flex;
+}
+.infoProd {
+    width: 40%;
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid rgb(152, 152, 152);
+    border-right: 1px solid rgb(152, 152, 152);
+}
+.itemNome {
+    font-weight: bold;
+}
+.buyArea {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 25px;
+}

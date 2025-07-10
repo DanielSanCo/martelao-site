@@ -1,0 +1,17 @@
+.navbar {
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(255,247,8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+}
+.logo {
+    height: 50px;
+}
+.produto {
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+}
