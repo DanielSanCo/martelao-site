@@ -1,17 +1,60 @@
 .navbar {
-    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
     width: 100vw;
     background-color: rgb(255,247,8);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 0;
 }
+
 .logo {
-    height: 50px;
+  height: 50px;
 }
+
+/* Wrapper para o input e os resultados */
+.buscaContainer {
+  position: relative;
+  flex: 1;
+}
+
+/* Input de busca */
 .produto {
-    width: 20%;
-    height: 30px;
-    padding: 5px;
+    width: 40%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Resultados aparecem abaixo do input e não alteram o layout */
+.resultados {
+  position: absolute;
+  top: 100%;
+  width: 40%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 999;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Itens da lista */
+.resultados li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.resultados li:hover {
+  background: #f5f5f5;
 }

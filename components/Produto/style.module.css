@@ -31,7 +31,7 @@
 }
 .oferta{
     width: 100%;
-    background-color: yellow;
+    background-color: rgb(255,247,8);
     height: 20px;
     border-radius: 10px;
     display: flex;

@@ -18,7 +18,7 @@ const Produto = ({ id, img, nome, codigo, preco }: Props) => {
 
     return (
         <div className={styles.produtoFull}>
-            <a href={`/produto/${id}`} className={styles.produto}>
+            <a href={`/produto/${nome}`} className={styles.produto}>
                 <div className={styles.oferta}>oferta</div>
                 <div className={styles.imgArea}>
                     <img src={img} alt="" className={styles.img} />
