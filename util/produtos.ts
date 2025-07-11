@@ -39,6 +39,38 @@ const Produtos = [
         desc: '', 
         categoria: 'Eletrica'
     },
+    {
+        nome: 'Tinta Acrilica Coralar *Branca Lata 18lt', 
+        codigo: '25100', 
+        img: '/img/tintaCoralar.png', 
+        preco: 216.25,
+        desc: '', 
+        categoria: 'Eletrica',
+        cores: [
+            {nome: 'Branco', preco: 216.25, codigo: '08278'},
+            {nome: 'Amarelo Canario', preco: 255, codigo: '08278'},
+            {nome: 'Amarelo Fervo', preco: 255, codigo: '23025'},
+            {nome: 'Areia', preco: 255, codigo: '08267'},
+            {nome: 'Azul Pavão', preco: 261.24, codigo: '17783'},
+            {nome: 'Camurça', preco: 255, codigo: '08296'},
+            {nome: 'Concreto', preco: 255, codigo: '17159'},
+            {nome: 'Laranja Maracatu', preco: 265.63, codigo: '23028'},
+
+            
+            {nome: 'Lua do Sertão', preco: 261.24, codigo: '08278'},
+            {nome: 'Marfim', preco: 263.75, codigo: '08262'},
+            {nome: 'Oceano', preco: 265.63, codigo: '08283'},
+            {nome: 'Palha', preco: 255.63, codigo: '08266'},
+            {nome: 'Perola', preco: 255, codigo: '08259'},
+
+            
+            {nome: 'Pessego', preco: 270, codigo: '08286'},
+            {nome: 'Rubi', preco: 290.63, codigo: '25648'},
+            {nome: 'Verde Limão', preco: 255, codigo: '08282'},
+            {nome: 'Verde Timbalada', preco: 255, codigo: '23568'},
+            {nome: 'Verde Vale', preco: 255, codigo: '08275'},
+        ]
+    },
 ]
 
 export default Produtos;
