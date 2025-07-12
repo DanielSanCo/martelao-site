@@ -5,16 +5,20 @@ import Produtos from '@/util/produtos';
 const Eletrica = () => {
     return (
         <div className={styles.main}>
-            {Produtos.map((item, index) => (
-                <Produto
-                    key={index}
-                    id={index}
-                    img={item.img}
-                    nome={item.nome}
-                    codigo={item.codigo}
-                    preco={item.preco}
-                />
-            ))}
+            <div className={styles.space}></div>
+            <div className={styles.produtos}>
+                {Produtos.map((item, index) => (
+                    <Produto
+                        key={index}
+                        id={index}
+                        img={item.img}
+                        nome={item.nome}
+                        codigo={item.codigo}
+                        preco={item.preco}
+                    />
+                ))}
+            </div>
+            <div className={styles.space}></div>
         </div>
     )
 }

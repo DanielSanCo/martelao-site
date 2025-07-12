@@ -9,6 +9,7 @@ const PageProd = () => {
   const [corSelecionada, setCorSelecionada] = useState('');
   const [precoSelecionado, setPrecoSelecionado] = useState<number | null>(null);
   const [codigoSelecionado, setCodigoSelecionado] = useState('');
+  const [copiado, setCopiado] = useState(false);
 
   if (!router.isReady) return <div>Carregando...</div>;
 
@@ -20,7 +21,7 @@ const PageProd = () => {
   }
 
   const handleCorChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const cor = prodInfo.cores?.find(c => c.nome === e.target.value);
+    const cor = prodInfo.opcoes?.find(c => c.nome === e.target.value);
     if (cor) {
       setCorSelecionada(cor.nome);
       setPrecoSelecionado(cor.preco);
@@ -29,6 +30,16 @@ const PageProd = () => {
   };
 
   const precoBase = precoSelecionado ?? prodInfo.preco;
+
+  const copiarTexto = async () => {
+    try {
+      await navigator.clipboard.writeText(codigoSelecionado || prodInfo.codigo);
+      setCopiado(true);
+      setTimeout(() => setCopiado(false), 2000); // remove aviso após 2s
+    } catch (err) {
+      console.error('Erro ao copiar:', err);
+    }
+  };
 
   return (
     <div className={styles.main}>
@@ -50,29 +61,38 @@ const PageProd = () => {
 
         <div className={styles.infoProd}>
           <div className={styles.itemNome}>{prodInfo.nome}</div>
-          <div className={styles.itemNome}>Código: {codigoSelecionado || prodInfo.codigo}</div>
+          <div className={styles.itemNome}>
+            Código:{" "}
+            <div onClick={copiarTexto} style={{ cursor: 'pointer', display: 'inline', color: 'blue' }}>
+              {codigoSelecionado || prodInfo.codigo}
+              {copiado && <span style={{ color: 'green', marginLeft: 5 }}>✔ Copiado!</span>}
+            </div>
+          </div>
         </div>
 
         <div className={styles.buyArea}>
           <div>
-            <label htmlFor="cor">Cor:</label>
+            <label htmlFor="cor">opção:</label>
             <select
               id="cor"
               className={styles.input}
               defaultValue=""
               onChange={handleCorChange}
             >
-              <option value="" disabled>Selecione uma cor</option>
-              {prodInfo.cores?.map((item, index) => (
-                <option key={item.codigo || index} value={item.nome}>
-                  {item.nome}
-                </option>
+              <option value="" disabled>Selecione...</option>
+              {prodInfo.opcoes?.map((item, index) => (
+                <>
+                    <option key={item.codigo || index} value={item.nome}>
+                      {item.nome}
+                    </option>
+                </>
               ))}
+
             </select>
 
             {corSelecionada && (
               <div style={{ marginTop: '5px', fontSize: '12px', marginBottom: '10px' }}>
-                Cor selecionada: <strong>{corSelecionada}</strong><br />
+                opção selecionada: <strong>{corSelecionada}</strong><br />
                 Preço base: <strong>R$ {precoBase.toFixed(2)}</strong>
               </div>
             )}

@@ -16,14 +16,6 @@ const Produtos = [
         categoria: 'Eletrica'
     },
     {
-        nome: 'Telha Colonial 2.30x0.86 PVC cor terracota', 
-        codigo: '18344', 
-        img: '/img/telhaColonial.jpg', 
-        preco: 123.75,
-        desc: '', 
-        categoria: 'Eletrica'
-    },
-    {
         nome: 'Cadeira Madeira Dobravel Imbuia', 
         codigo: '13875', 
         img: '/img/cadeiraDobravel.png', 
@@ -46,7 +38,7 @@ const Produtos = [
         preco: 216.25,
         desc: '', 
         categoria: 'Eletrica',
-        cores: [
+        opcoes: [
             {nome: 'Branco', preco: 216.25, codigo: '08278'},
             {nome: 'Amarelo Canario', preco: 255, codigo: '08278'},
             {nome: 'Amarelo Fervo', preco: 255, codigo: '23025'},
@@ -71,6 +63,71 @@ const Produtos = [
             {nome: 'Verde Vale', preco: 255, codigo: '08275'},
         ]
     },
+    {
+        nome: 'Telha Colonial 2.30x0.86 PVC cor terracota', 
+        codigo: '18344', 
+        img: '/img/telhaColonial.jpg', 
+        preco: 123.75,
+        desc: '', 
+        categoria: 'Eletrica'
+    },
+    {
+        nome: 'Telha PVC leitosa 2.44x1.10 *Afort', 
+        codigo: '07668', 
+        img: '/img/telhaLeitosa.png', 
+        preco: 171.24,
+        desc: '', 
+        categoria: 'Telha',
+        opcoes: [
+            {nome: '2.44x1.10', preco: 171.24, codigo: '07668'},
+            {nome: '2.44x0.50', preco: 84.37, codigo: '07669'}
+        ]
+    },
+    {
+        nome: 'Telha Fibro Incolor 2.44x1.10 Afort', 
+        codigo: '13190', 
+        img: '/img/telhaIncolor.png', 
+        preco: 108.73,
+        desc: '', 
+        categoria: 'Telha',
+        opcoes: [
+            {nome: '2.44x1.10', preco: 108.73, codigo: '13190'},
+            {nome: '2.44x0.50', preco: 84.37, codigo: '13191'}
+        ]
+    },
+    {
+        nome: 'Telha Fibrocimento 2.44x1.10 5mm', 
+        codigo: '19447', 
+        img: '/img/telhaFibrocimento.png', 
+        preco: 76.87,
+        desc: '', 
+        categoria: 'Telha'
+    },
+    {
+        nome: 'Telha Plan 2.42x0.88 PVC cor marfim Precon', 
+        codigo: '12680', 
+        img: '/img/telhaPlan.png', 
+        preco: 127.48,
+        desc: '', 
+        categoria: 'Telha'
+    },
+    {
+        nome: 'Conduite Tigreflex 20mm 50mt - Tigre', 
+        codigo: '00317', 
+        img: '/img/conduiteTigreAmarelo.png', 
+        preco: 155.62,
+        desc: '', 
+        categoria: 'Conduite'
+    },
+    {
+        nome: 'Conduite Amarelo Reforçado 25mm 50mt - Fortlev', 
+        codigo: '03462', 
+        img: '/img/conduiteAmareloFortlev.png', 
+        preco: 71.24,
+        desc: '', 
+        categoria: 'Conduite'
+    },
+    
 ]
 
 export default Produtos;
