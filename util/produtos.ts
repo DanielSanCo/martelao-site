@@ -139,43 +139,50 @@ const Produtos = [
         nome: "TINTA CHEGA DE MOFO 3.6L CORAL",
         codigo: '15281',
         preco: 181.87,
-        img: ""
+        img: "",
+        categoria: ''
     },
     {
         nome: "TINTA ESMALTE HEMERITE BR 800ML CORAL",
         codigo: '06255',
         preco: 99.99,
-        img: ""
+        img: "",
+        categoria: ''
     },
     {
         nome: "TINTA ESM BASE DAGUA BR ACETINA 1/4 CORAL",
         codigo: '11726',
         preco: 58.12,
-        img: ""
+        img: "",
+        categoria: ''
     },
     {
         nome: "TINTA ESM CORALIT BRILHO AZUL FRANCA 900ML CORAL",
         codigo: '07779',
         preco: 57.48,
-        img: ""
+        img: "",
+        categoria: ''
     },
     {
         nome: "VENTILADOR PAREDE PRETO 60CM BIVOLT VEN",
         codigo: '01780',
         preco: 351.24,
-        img: ""
+        img: "",
+        categoria: ''
     },
     {
         nome: "TRILHO 200CM BRANCO",
         codigo: '07451',
         preco: 64.37,
-        img: ""
+        img: "",
+        categoria: ''
     },
     {
         nome: "TELHA ISOPOR 0.97X1.99 - MARTELAO",
         codigo: '27233',
         preco: 62.48,
-        img: ""
+        img: "",
+        categoria: ''
     },
     {
         nome: "PRIMER BASE SOLVENTE GL 3.6L DRYKO",
@@ -187,13 +194,15 @@ const Produtos = [
         nome: "PRIMER BASE AGUA 1LT DRYKO",
         codigo: '20757',
         preco: 22.48,
-        img: ""
+        img: "",
+        categoria: ''
     },
     {
         nome: "CONTRA UMIDADE SACO 500ML VIAPOL UN",
         codigo: '25081',
         preco: 6.23,
-        img: ""
+        img: "",
+        categoria: ''
     }
 ]
 
