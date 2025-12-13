@@ -20,17 +20,6 @@ const PageProd = () => {
     return <div>Produto inválido ou não encontrado: {nomeProduto}</div>;
   }
 
-  const handleCorChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const cor = prodInfo.opcoes?.find(c => c.nome === e.target.value);
-    if (cor) {
-      setCorSelecionada(cor.nome);
-      setPrecoSelecionado(cor.preco);
-      setCodigoSelecionado(cor.codigo);
-    }
-  };
-
-  const precoBase = precoSelecionado ?? prodInfo.preco;
-
   const copiarTexto = async () => {
     try {
       await navigator.clipboard.writeText(codigoSelecionado || prodInfo.codigo);
@@ -67,34 +56,6 @@ const PageProd = () => {
               {codigoSelecionado || prodInfo.codigo}
               {copiado && <span style={{ color: 'green', marginLeft: 5 }}>✔ Copiado!</span>}
             </div>
-          </div>
-        </div>
-
-        <div className={styles.buyArea}>
-          <div>
-            <label htmlFor="cor">opção:</label>
-            <select
-              id="cor"
-              className={styles.input}
-              defaultValue=""
-              onChange={handleCorChange}
-            >
-              <option value="" disabled>Selecione...</option>
-              {prodInfo.opcoes?.map((item, index) => (
-                <>
-                    <option key={item.codigo || index} value={item.nome}>
-                      {item.nome}
-                    </option>
-                </>
-              ))}
-
-            </select>
-
-            {corSelecionada && (
-              <div style={{ marginTop: '5px', fontSize: '12px', marginBottom: '10px' }}>
-                opção selecionada: <strong>{corSelecionada}</strong><br />
-              </div>
-            )}
           </div>
         </div>
       </div>
