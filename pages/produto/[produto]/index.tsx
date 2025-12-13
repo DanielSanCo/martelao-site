@@ -93,16 +93,9 @@ const PageProd = () => {
             {corSelecionada && (
               <div style={{ marginTop: '5px', fontSize: '12px', marginBottom: '10px' }}>
                 opção selecionada: <strong>{corSelecionada}</strong><br />
-                Preço base: <strong>R$ {precoBase.toFixed(2)}</strong>
               </div>
             )}
           </div>
-
-          <div>R$ {(precoBase * 0.8).toFixed(2)} pix</div>
-          <br />
-          <div>R$ {(precoBase * 0.85).toFixed(2)} débito</div>
-          <br />
-          <div>R$ {(precoBase * 0.9).toFixed(2)} crédito</div>
         </div>
       </div>
     </div>

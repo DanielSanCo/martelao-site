@@ -6,7 +6,7 @@ type Produto = {
     nome: string;
     codigo: string;
     img: string;
-    preco: number;
+    preco?: number;
     desc: string;
     categoria: string;
 };
@@ -14,6 +14,8 @@ type Produto = {
 const NavBar = () => {
     const [busca, setBusca] = useState<string>('');
     const [resultados, setResultados] = useState<Produto[]>([]);
+    const [codigoSelecionado, setCodigoSelecionado] = useState('');
+    const [copiado, setCopiado] = useState(false);
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const valor = e.target.value;
@@ -28,7 +30,19 @@ const NavBar = () => {
             produto.nome.toLowerCase().includes(valor.toLowerCase()) ||
             produto.codigo.includes(valor)
         );
-        setResultados(filtrados);
+        setResultados(filtrados as Produto[]);
+    };
+
+
+
+    const copiarTexto = async (codigo: string) => {
+        try {
+            await navigator.clipboard.writeText(codigo);
+            setCopiado(true);
+            setTimeout(() => setCopiado(false), 2000);
+        } catch (err) {
+            console.error('Erro ao copiar:', err);
+        }
     };
 
     return (
@@ -50,12 +64,20 @@ const NavBar = () => {
                 {busca && resultados.length > 0 && (
                     <ul className={styles.resultados}>
                         {resultados.map((prod, index) => (
-                            <a href={`/produto/${prod.nome}`}>
-                                <li key={prod.codigo}>
-                                    <img src={prod.img} alt={prod.nome} width={40} />
-                                    <span>{prod.nome} - R$ {prod.preco.toFixed(2)}</span>
-                                </li>
-                            </a>
+                            <div style={{ display: 'flex', alignItems: 'center' }} key={index}>
+                                <div
+                                    onClick={() => copiarTexto(prod.codigo)}
+                                >
+                                    {prod.codigo}
+                                    {copiado && <span style={{ color: 'green', marginLeft: 5 }}>✔ Copiado!</span>}
+                                </div>
+                                <a href={`/produto/${prod.nome}`}>
+                                    <li key={prod.codigo}>
+                                        <img src={prod.img} alt={prod.nome} width={40} />
+                                        <div>{prod.nome}</div>
+                                    </li>
+                                </a>
+                            </div>
                         ))}
                     </ul>
                 )}

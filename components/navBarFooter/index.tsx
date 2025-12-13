@@ -1,10 +1,7 @@
 import styles from './style.module.css'
 
 const navList = [
-    { nome: 'Canos', link: '/Canos' },
-    { nome: 'Banheiro', link: '/Banheiro' },
-    { nome: 'Elétrica', link: '/Eletrica' },
-    { nome: 'Construção', link: '/Construcao' },
+    { nome: 'Lista de produtos', link: '/lista-de-produtos' },
 ]
 
 const NavBarFooter = () => {
