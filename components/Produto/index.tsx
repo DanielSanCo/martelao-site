@@ -6,12 +6,10 @@ type Props = {
     id: number,
     img: string,
     nome: string,
-    codigo: string,
-    preco: number
+    codigo: string
 }
 
-const Produto = ({ id, img, nome, codigo, preco }: Props) => {
-    const [precoP, setPrecoP] = useState(preco * 0.8);
+const Produto = ({ id, img, nome, codigo }: Props) => {
     const numero = '5521969703202'; // Substitua pelo número com DDI + DDD + número
     const mensagem = `Olá, gostaria de saber sobre o produto: ${nome}, cód: ${codigo}`;
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
@@ -26,11 +24,6 @@ const Produto = ({ id, img, nome, codigo, preco }: Props) => {
                 <div className={styles.infoArea}>
                     <div className={styles.nome}>{nome}</div>
                     <div className={styles.cod}>Código: {codigo}</div>
-                    <div className={styles.infoPag}>no crédito/débito</div>
-                    <div className={styles.preco}>R$ {(preco * 0.90).toFixed(2)} / R$ {(preco * 0.85).toFixed(2)}</div>
-                    <div className={styles.infoPag}>ou</div>
-                    <div className={styles.precoPix}>R$ {(preco * 0.8).toFixed(2)}</div>
-                    <div className={styles.infoPag}>no dinheiro ou pix</div>
                 </div>
                 <div className={styles.space}></div>
             </a>
