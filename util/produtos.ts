@@ -81,6 +81,54 @@ const Produtos = [
         img: "https://cdn.awsli.com.br/1659/1659184/produto/118684901/8f86094246.jpg",
         infos: 'A "barra monofásica" é um termo utilizado no contexto de instalações elétricas, e não em treinos de academia. A sua função é distribuir a corrente elétrica de uma única fase para vários pontos (como disjuntores) dentro de um quadro de distribuição, proporcionando uma instalação mais segura e organizada. Sua função principal é: 1 - Interligar disjuntores; 2 - Balancear a carga; 3 - Otimizar a instalação; 4 - Fornecer maior potência.' 
     },
+    { 
+        nome: "massa zarcao 200g iguaco", 
+        codigo: "07862", 
+        img: "https://trenaferragens.com.br/wp-content/uploads/2021/05/02076.jpg",
+        infos: 'A massa zarcão serve como fundo preparador anticorrosivo para metais, protegendo-os contra a ferrugem e oxidação e aumentando a aderência da tinta de acabamento. Usada em superfícies como portões, grades, esquadrias e estruturas metálicas para prolongar sua durabilidade e manter um bom visual. Além disso, existe uma "massa zarcão" específica para vedação de encanamentos, usada nas roscas para evitar vazamentos'
+    },
+    { 
+        nome: "resina base agua ceramica 3.6gl - extracrill",
+        codigo: "24085",
+        img: "https://cdn.grupolle.com.br/produtos/33445/33445.jpg",
+        infos: 'A resina à base de água da Extracrill, serve para impermeabilizar, proteger e embelezar superfícies porosas, criando uma camada resistente à água, sujeira, mofo e intempéries, ideal para telhas, tijolos, pedras e concreto, com a vantagem do baixo odor e fácil limpeza. Ela reduz a absorção de água, combate fungos e realça a cor ou deixa a superfície com aspecto brilhante, sendo ótima para áreas internas e externas.'
+    },
+    { 
+        nome: "bezolim desincrustante acido l-440", 
+        codigo: "25808", 
+        img: "https://cdn.awsli.com.br/800x800/338/338110/produto/2304666692c9e1844ba.jpg",
+        infos: 'O Bezolim desincrustante (especificamente o modelo L-440) é um detergente químico ácido concentrado, indicado para a limpeza de serpentinas e aletas de ar-condicionado, tanto domésticos quanto industriais. Sua função é remover sujeiras incrustadas, graxas, óleos e eflorescências de superfícies de alumínio.'
+    },
+    { 
+        nome: "vedacit massa asfaltica impermeabilizante galao 3.9kg vedacit", 
+        codigo: "03383", 
+        img: "https://normatel.fbitsstatic.net/img/p/frio-asfalto-galao-3-9kg-preto-vedacit-72609/259152.jpg?w=770&h=770&v=no-value",
+        infos: 'A Vedacit Massa Asfáltica serve para impermeabilizar e proteger diversas superfícies, como lajes de cobertura, terraços, áreas frias (banheiros, cozinhas), baldrames, e fundações, formando uma camada contínua, flexível e resistente contra umidade e infiltrações, com aplicação a frio e sem emendas, ideal para reparos e proteção de grandes áreas.'
+    },
+    { 
+        nome: "bianco 3.6gl vedacit", 
+        codigo: "06997", 
+        img: "https://joli.vtexassets.com/arquivos/ids/607472-800-800?v=638025041640600000&width=800&height=800&aspect=true",
+        infos: 'A Bianco 3,6GL Vedacit serve para melhorar a aderência e resistência de chapiscos e argamassas; é uma resina sintética de alto desempenho usada como aditivo para chapiscos e argamassas, melhorando drasticamente a aderência, plasticidade, coesão e resistência, evitando fissuras e aumentando a durabilidade em áreas internas e externas, inclusive em substratos difíceis como EPS (Isopor), sendo essencial para um bom começo de revestimentos em construções e reformas. • COMO USAR: (dilui em água e adiciona à mistura de cimento e areia, criando uma ponte de aderência para chapiscos e argamassas, garantindo mais liga e resistência).'
+    },
+    { 
+        nome: "sika top 100 cx 18kg sika", 
+        codigo: "01949", 
+        img: "https://cdn.awsli.com.br/2261/2261856/produto/215569451/chatgpt-image-11-de-ago--de-2025--12_01_51-m3ut3ncglt.png",
+        infos: 'O SikaTop®-100 serve para impermeabilizar e proteger superfícies de concreto, argamassa e alvenaria contra a umidade e infiltrações; sendo ideal para caixas dágua, piscinas, banheiros, cozinhas, porões, cisternas, e para evitar umidade em rodapés e paredes. É um revestimento bicomponente (cimento + resina acrílica) de fácil aplicação, com alta aderência e que forma uma barreira semi-flexível contra a água, podendo também ser usado para proteger pedras naturais claras.'
+    },
+    { 
+        nome: "sika 1 saco sika", 
+        codigo: "01946", 
+        img: "https://images.tcdn.com.br/img/img_prod/1250632/sika_1_saco_1_litro_579_1_e1e2e2e753be553f999da427dd71bf51.jpeg",
+        infos: `O Sika-1 serve para impermeabilizar massas e concretos; é um aditivo impermeabilizante para argamassa e concreto, serve para bloquear a rede capilar, impedindo a penetração de água e umidade em estruturas como fundações, subsolos, paredes, pisos, piscinas e caixas dágua, garantindo durabilidade e evitando mofo e infiltrações. • COMO USAR: (Coloque-o no cimento e misture) • Ele reage com o cimento para criar substâncias minerais que vedam a estrutura, sendo ideal para rebocos internos e externos, contrapisos e assentamento de blocos`
+    },
+    { 
+        nome: "catalisador para tinta epoxi base solvente 900ml coral", 
+        codigo: "24226", 
+        img: "https://cdn.awsli.com.br/2500x2500/1593/1593344/produto/94490300/20240912104234321720ea8d6747-a4snkckh9n.jpg",
+        infos: 'O catalisador para tinta epóxi serve para endurecer a tinta; por meio de reação quimica ele transforma a tinta líquida em um revestimento sólido, duro e durável, acelerando a cura e garantindo propriedades como alta resistência a impactos, abrasão e produtos químicos, sendo essencial para o desempenho máximo da tinta em pisos e superfícies de alto tráfego. Sem ele, a tinta epóxi não cura corretamente, resultando em um acabamento fraco e ineficaz, pois ele atua como um endurecedor. • COMO USAR: (misturar a tinta (componente A) e o catalisador (componente B) nas proporções corretas (geralmente 3 partes de A para 1 de B), mexer bem por alguns minutos, aguardar um tempo de "pot life" (10-20 min), e só então adicionar o diluente e aplicar).'
+    },
     { nome: "varao cortina", codigo: "12161", img: "https://m.media-amazon.com/images/I/61FPke5Jq8L._AC_SX679_.jpg" },
     { nome: "cirandao cafe 1.20mt sao jorge", codigo: "05512", img: "https://lh6.googleusercontent.com/proxy/n4ilA7AcUjbs2ajXToB6YOw8biSBVbgImb7-lPfRlwNFcu1cVbVcT6pccrkQwfPNo8QARvn2ktU_XTo_LqjuCtXlYMTZIP3J0log" },
     { nome: "tarraxa 3/4 meikon", codigo: "05151", img: "https://cdn.leroymerlin.com.br/products/tarraxa_para_tubo_de_pvc_3_4_momfort_90780620_0001_600x600.jpg" },
@@ -110,7 +158,6 @@ const Produtos = [
     { nome: "jogo serras copo bimetal 13 pecas + estojo lotus", codigo: "26879", img: "https://http2.mlstatic.com/D_NQ_NP_855738-MLB85299366414_062025-O-jogo-de-serra-copo-bimetal-13-pecas-com-estojo-lotus.webp" },
     { nome: "mandril starfer 10mm 3/8 starfer", codigo: "25504", img: "https://http2.mlstatic.com/D_NQ_NP_939826-MLU73589115465_122023-O.webp" },
     { nome: "linha pedreiro 100mt polibel", codigo: "20944", img: "https://a-static.mlcdn.com.br/800x560/linha-pedreiro-polibel-tranc-100m-polietileno-c-12pcs/mundialskyltda/7898078640029/6d4d1aede3a72d21d58a01236526ae45.jpeg" },
-    { nome: "bezolim desincrustante acido l-440", codigo: "25808", img: "https://cdn.awsli.com.br/800x800/338/338110/produto/2304666692c9e1844ba.jpg" },
     { nome: "lava arroz ercaplast", codigo: "22981", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc1g4aiDlmkSbkLicoQ7ou1Evf6JWvnla6jw&s" },
     { nome: "porta talheres comtampa 4 div ercaplast", codigo: "22980", img: "https://www.ercaplast.com.br/public/produtos/511/511-porta-talheres-s-tampa-4-div-rec_g.jpg" },
     { nome: "saleiro de parede transcolor ercaplast", codigo: "22994", img: "https://www.ercaplast.com.br/public/produtos/521/521-saleiro-de-parede-transcolor_g.jpg" },
@@ -264,7 +311,6 @@ const Produtos = [
     { nome: "cabide monaco cromado global", codigo: "22313", img: "https://images.tcdn.com.br/img/img_prod/1371987/cabide_simples_monaco_cromado_duda_c_1_3477_1_ae33f67d8ab5db0a906d6beddef943ab.jpg" },
     { nome: "jimo cupim base d'agua sem cheiro 900ml", codigo: "09653", img: "https://lojasafubra.vtexassets.com/arquivos/ids/183166/jimo-cupim-base-agua-900-ml-105071-1.png?v=637957480611730000" },
     { nome: "selante para radiadores 250ml ref. 3357 mundial prime", codigo: "10268", img: "https://a-static.mlcdn.com.br/800x800/selante-para-radiador-250g-mundial-prime/carxparts/50410371/6d7b02923c78919033881937b51c3c9c.jpg" },
-    { nome: "massa zarcão 200g iguaco", codigo: "07862", img: "https://trenaferragens.com.br/wp-content/uploads/2021/05/02076.jpg" },
     { nome: "serra marmore makita 1300w 127v 4100nh3zx2 com 02 discos corte industrial", codigo: "20177", img: "https://maksantos.com.br/wp-content/uploads/2025/02/15282288187-4100nh3zx2-0001-4100nh3zx2.jpg" },
     { nome: "martelete combinado 24mm 127v 800w hr 2470 industrial maleta makita", codigo: "16587", img: "https://images.tcdn.com.br/img/img_prod/694151/martelete_combinado_makita_sds_plus_hr2470_800w_110v_24mm_com_maleta_31965_1_71b3dde5ed31ab2761c9e68009a094d1.jpg" },
     { nome: "furadeira impacto 1/2 500w 127v tramontina", codigo: "27457", img: "https://eletrorastro.fbitsstatic.net/img/p/furadeira-de-impacto-1-2-500w-127v-tramontina-97519/288224.jpg?w=800&h=800&v=202505221658&qs=ignore" },
@@ -294,7 +340,6 @@ const Produtos = [
     { nome: "grade redonda branca com tela gr100 itc", codigo: "20182", img: "https://cdn.awsli.com.br/2500x2500/2716/2716027/produto/256036200/gr100-dze7mpdicb.png" },
     { nome: "papelao ondulado 1.20x30mt oruam", codigo: "11307", img: "https://http2.mlstatic.com/D_NQ_NP_2X_760241-MLB89536231614_082025-F-papelo-ondulado-120x30-metros.webp" },
     { nome: "arame queimado 1kg - martelao", codigo: "25604", img: "https://lojaqueroquero.vtexassets.com/arquivos/ids/3251156-800-800?v=638242363881300000&width=800&height=800&aspect=true" },
-    { nome: "catalisador para tinta epoxi base solvente 900ml coral", codigo: "24226", img: "https://cdn.awsli.com.br/2500x2500/1593/1593344/produto/94490300/20240912104234321720ea8d6747-a4snkckh9n.jpg" },
     { nome: "tinta esmalte sintetica ceramica brilho 900ml extracrill", codigo: "24123", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGjAH_Kk_hdDYx7MgDXPAMFZommt3JPk9tSA&s" },
     { nome: "verniz sparlack mar fosco natural gl co", codigo: "04415", img: "https://cdn.awsli.com.br/600x450/941/941759/produto/188367366/sparlack-extra-00-tr8kbjcfc4.png" },
     { nome: "corante liquido xadrez preto 50ml sherw", codigo: "01241", img: "https://lojagubler.cdn.magazord.com.br/img/2024/01/produto/4239/corante-xadrez-sherwin-williams-preto.png?ims=600x600" },
@@ -306,16 +351,11 @@ const Produtos = [
     { nome: "tinta acrilica fosco branco 3.6gl extracrill", codigo: "22022", img: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m1ulhvhhk0iyb9" },
     { nome: "tinta acrilica coralar refresco 3.6l galao coral", codigo: "23029", img: "https://http2.mlstatic.com/D_NQ_NP_721094-MLB90374525219_082025-O.webp" },
     { nome: "resina base solvente incolor 3.6gl - extracrill", codigo: "24087", img: "https://cdn.grupolle.com.br/produtos/33443/33443.jpg" },
-    { nome: "resina base agua ceramica 3.6gl - extracrill", codigo: "24085", img: "https://cdn.grupolle.com.br/produtos/33445/33445.jpg" },
-    { nome: "vedacit massa asfaltica impermeabilizante galao 3.9kg vedacit", codigo: "03383", img: "https://normatel.fbitsstatic.net/img/p/frio-asfalto-galao-3-9kg-preto-vedacit-72609/259152.jpg?w=770&h=770&v=no-value" },
-    { nome: "bianco 3.6gl vedacit", codigo: "06997", img: "https://joli.vtexassets.com/arquivos/ids/607472-800-800?v=638025041640600000&width=800&height=800&aspect=true" },
     { nome: "drykofix chapisco 3.6gl dryko", codigo: "21153", img: "https://brutools.com.br/matcon/2013-large_default/adesivo-para-chapisco-drykofix-36l-galao-dryko-item-similar-ao-bianco.jpg" },
-    { nome: "sika top 100 cx 18kg sika", codigo: "01949", img: "https://cdn.awsli.com.br/2261/2261856/produto/215569451/chatgpt-image-11-de-ago--de-2025--12_01_51-m3ut3ncglt.png" },
     { nome: "fita demarcacao 48x14 preto e amarelo adelbras", codigo: "24747", img: "https://img.kalunga.com.br/fotosdeprodutos/301102z.jpg" },
     { nome: "fita antiderrapante preta 50mmx5m lixas tatu", codigo: "23938", img: "https://cdn.awsli.com.br/800x800/1659/1659184/produto/170952197/8dca19f9ad.jpg" },
     { nome: "betume garrafa 500ml lacxe", codigo: "26585", img: "https://a-static.mlcdn.com.br/800x800/betume-500ml-lacxe-envelhecedor-de-madeira/amj/15814114272/fef5d44c6a0f7dd015b9a22048076827.jpeg" },
     { nome: "lixa madeira e massa 120 tatu", codigo: "03716", img: "https://cdn.awsli.com.br/600x700/1166/1166976/produto/170685475/c1065c20ca.jpg" },
-    { nome: "sika 1 saco sika", codigo: "01946", img: "https://images.tcdn.com.br/img/img_prod/1250632/sika_1_saco_1_litro_579_1_e1e2e2e753be553f999da427dd71bf51.jpeg" },
     { nome: "kit pintura 5 peças preto atlas", codigo: "14891", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJzLmzrA5k9rjQKxPaU0Hs-vZjaJm24qqUeg&s" },
     { nome: "dimmer rot branco 127v 805 penta watt", codigo: "04216", img: "https://images.tcdn.com.br/img/img_prod/861603/dimmer_externo_127v_branco_penta_watt_105485_1_a22638d5028413c966a63e33af869370.jpg" },
     { nome: "limpa pneus 300ml spray mundial prime", codigo: "10278", img: "https://cosama.vteximg.com.br/arquivos/ids/171454-1000-1000/limpa_pneus_spray_mp10_300ml_mundial_prime.jpg?v=638176118522370000" },
@@ -432,6 +472,10 @@ const Produtos = [
         img: 'https://cdn.awsli.com.br/800x800/2560/2560520/produto/210434921/60-fazlhk.jpg',
         infos: ''
     },
+    { nome: 'Luminaria parede de vidro curvo 30cm jateada blumenau', codigo: '11622', img: '' },
+    { nome: 'controle para fita led colorida rgb', codigo: '27102', img: 'https://images.tcdn.com.br/img/img_prod/622407/kit_fita_led_rgb_7_8w_metro_ip20_5_metro_colorida_controle_12v_gaya_5579_2_094a3b3d0829d128e332547c78e908a2_20211214114519.jpg' },
+    { nome: 'luminaria solar cob 8w branco frio rg led', codigo: '17212', img: 'https://images.tcdn.com.br/img/img_prod/1220004/luminaria_solar_led_com_sensor_8w_branco_frio_453_1_e869060a73cb99de379cd848e11ac865.jpeg' },
+    { nome: 'balizador elegance 3000k avant', codigo: '25756', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ20b-4ak_KHEaMN3EDUb2BINWiM8xGtFtZNQ&s' },
     { nome: '', codigo: '', img: '' },
 ]
 
