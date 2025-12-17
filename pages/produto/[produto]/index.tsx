@@ -50,6 +50,7 @@ const PageProd = () => {
 
         <div className={styles.infoProd}>
           <div className={styles.itemNome}>{prodInfo.nome}</div>
+          <div style={{padding: '20px'}}>{prodInfo.infos}</div>
           <div className={styles.itemNome}>
             Código:{" "}
             <div onClick={copiarTexto} style={{ cursor: 'pointer', display: 'inline', color: 'blue' }}>

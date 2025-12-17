@@ -2,10 +2,85 @@ const Produtos = [
 
     /* NOVOS PRODUTOS */
 
-    { nome: "VIAPLUS 7000", codigo: "11302", img: "https://www.viapol.com.br/media/700836/viaplus-6000.png" },
-    { nome: "Viaplus 5000 18kg", codigo: "11114", img: "https://images.tcdn.com.br/img/img_prod/823039/kit_2_impermeabilizante_viaplus_5000_caixa_18kg_viapol_1879_2_1ba416aecd27fe1caad4c939dcb2b839.jpeg" },
-    { nome: "Argamassa ac-1 interno cinza construcola", codigo: "00656", img: "https://cdn.awsli.com.br/2509/2509566/produto/218677285/shoppidasng-d220ig8468.jpg" },
-    { nome: "Argamassa ac-1 quartzolit cinza", codigo: "03399", img: "https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-09/AF-3D-WEBER-CIMENTCOLA-INTERNO-20KG-PLASTICO-SIMP_9D0F8F89853140708B80F254E992C152.jpg.webp?itok=k7a0r6E-" },
+    { 
+        nome: "VIAPLUS 7000", 
+        codigo: "11302", 
+        img: "https://www.viapol.com.br/media/700836/viaplus-6000.png",
+        infos: 'Viaplus 7000 é uma argamassa mais flexivel, que impermeabiliza áreas umidas e molhadas, criando uma barreira contra a água e umidade, protegendo a estrutura contra infiltrações, mesmo sob pressão hidrostática;'
+    },
+    { 
+        nome: "Viaplus 5000 18kg", 
+        codigo: "11114", 
+        img: "https://images.tcdn.com.br/img/img_prod/823039/kit_2_impermeabilizante_viaplus_5000_caixa_18kg_viapol_1879_2_1ba416aecd27fe1caad4c939dcb2b839.jpeg",
+        infos: "Viaplus 5000 é uma argamassa mais rigida em comparação a 7000, que impermeabiliza áreas umidas e molhadas, criando uma barreira contra a água e umidade, protegendo a estrutura contra infiltrações, mesmo sob pressão hidrostática;"
+     },
+    { 
+        nome: "Argamassa ac-1 interno cinza construcola", 
+        codigo: "00656", 
+        img: "https://cdn.awsli.com.br/2509/2509566/produto/218677285/shoppidasng-d220ig8468.jpg" ,
+        infos: 'Argamassa ac-1 é uma argamassa colante cimenticia para uso interno; tem um tempo de secagem mais longo, permitindo assim ajustes;'
+    },
+    { 
+        nome: "Argamassa ac-1 quartzolit cinza", 
+        codigo: "03399", 
+        img: "https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-09/AF-3D-WEBER-CIMENTCOLA-INTERNO-20KG-PLASTICO-SIMP_9D0F8F89853140708B80F254E992C152.jpg.webp?itok=k7a0r6E-",
+        infos: 'Argamassa ac-1 é uma argamassa colante cimenticia para uso interno; tem um tempo de secagem mais longo, permitindo assim ajustes;'
+    },
+    { 
+        nome: "Argamassa ac-2 6x1 cinza 20kg construcola", 
+        codigo: "00646",
+        img: "https://images.tcdn.com.br/img/img_prod/1239768/argamassa_ac2_6x1_multifuncional_cinza_20kg_construcola_5437_1_ec8119ab9a1f8626a69116881997d860.jpeg",
+        infos: 'Argamassa ac-2 é uma argamassa colante cimenticia para uso interno ou externo; oferece maior aderência e flexibilidade em comparação com a AC-1'
+    },
+    { 
+        nome: "tinta zarcao laranja base solvente 900ml extracril", 
+        codigo: "24084", 
+        img: "https://images.tcdn.com.br/img/img_prod/1392010/zarcao_sintetico_laranja_900ml_extracrill_3723_1_2222a8c45ef5f9725024d8962d15fcb2.jpg",
+        infos: 'A tinta zarcão, base solvente (aguarrás ou thinner), serve para proteger superfícies metálicas ferrosas contra a ferrugem (corrosão) formando uma barreira protetora com cor alaranjada, e atua como um fundo preparador para a tinta de acabamento, garantindo maior aderência, durabilidade e uniformidade da pintura final em portões.'
+    },
+    { 
+        nome: "vedalage preto gl 3,6l - viapol", 
+        codigo: "25052", 
+        img: "https://a-static.mlcdn.com.br/1500x1500/viapol-vedalage-preto-gl-36-30001350/comprespcom/30001350/fe914ddef88616816ae654d277174618.jpeg",
+        infos: 'O Vedalage Viapol é uma manta líquida impermeabilizante; usada para criar uma camada protetora elástica e flexível contra umidade em superfícies; oferecendo alta durabilidade, facilidade de aplicação e, no caso da versão branca, conforto térmico por refletir o sol, sem a necessidade de proteção mecânica em muitas aplicações.'
+    },
+    { 
+        nome: "primer viabit base solvente 900ml viapol", 
+        codigo: "10186", 
+        img: "https://www.wermar.com.br/app/assets/images/dinamica/produto/2960/cor_0/77535-primer--viabit--900ml--viapol-100625-c05123.jpg",
+        infos: 'O Primer Viabit base solvente (aguarrás ou thinner) é uma tinta asfáltica impermeável e primer (base) para diversas aplicações, criando uma camada de alta aderência em superfícies como concreto, alvenaria, metal e PVC, sendo essencial para a colagem de mantas asfálticas, proteção contra umidade em fundações e muros de arrimo, e até proteção anticorrosiva em madeiras e metais não expostos, funcionando como uma base de conexão para sistemas de impermeabilização. '
+    },
+    { 
+        nome: "ecoprimer galao 3.6lt viapol", 
+        codigo: "10194", 
+        img: "https://http2.mlstatic.com/D_644184-MLB91339705756_092025-O.jpg",
+        infos: 'O Ecoprimer da Viapol serve como um primer (produto que prepara a pele (ou outras superfícies) para receber outro acabamento, funcionando como uma base ou selante); à base de água, prepara superfícies (concreto, argamassa, alvenaria, fibra de vidro) antes da aplicação de mantas e fitas asfálticas, garantindo uma colagem forte, uniforme e duradoura, sendo um produto ecológico, de baixo odor e pronto para uso.'
+     },
+    { 
+        nome: "contra umidade galao 3.6lt viapol", 
+        codigo: "08928", 
+        img: "https://casamimosa1.vtexassets.com/arquivos/ids/185799-800-800?v=638011484503430000&width=800&height=800&aspect=true",
+        infos: 'O Contra Umidade da Viapol é um aditivo impermeabilizante hidrófugo que, misturado em argamassas e concretos, bloqueia os poros (capilares) da estrutura, impedindo a penetração e o desenvolvimento da umidade, sendo ideal para proteger áreas sujeitas a infiltrações como subsolos, alicerces, baldrames, muros de contenção, piscinas enterradas, poços de elevadores e caixas dágua enterradas. Ele confere impermeabilidade duradoura, melhora a trabalhabilidade e protege a obra contra a umidade ascendente e filtrações. COMO FUNCIONA? Adição: É misturado na água de amassamento do concreto ou argamassa. Reação: Reage com o cimento, formando uma barreira dentro dos capilares da estrutura.Bloqueio: Interrompe a passagem da água, tornando a argamassa impermeável. '
+    },
+    
+    { 
+        nome: "viafix galao gl 3.6kg - viapol", 
+        codigo: "08926", 
+        img: "https://http2.mlstatic.com/D_981421-MLB82610851521_022025-O.jpg", 
+        infos: 'O Viafix da Viapol serve como um promotor de aderência, resistência e plasticidade para argamassas e chapiscos, sendo um adesivo à base de PVA que melhora o desempenho em diversas aplicações na construção civil, como rebocos, contrapisos, assentamento de pisos e azulejos, e chapisco sobre superfícies lisas como isopor, além de conferir propriedades impermeabilizantes à argamassa.' 
+    },
+    { 
+        nome: "barramento trifasico 80a 440v 16p din steck", 
+        codigo: "08617", 
+        img: "https://http2.mlstatic.com/D_NQ_NP_644567-MLB44795487090_022021-O.webp",
+        infos: 'A barra trifásica (ou barramento trifásico) é um componente utilizado em quadros de distribuição de energia para conduzir e distribuir, de forma eficiente e segura, a corrente elétrica em sistemas que operam com três fases. Sua função principal é: 1 - Interligar disjuntores; 2 - Balancear a carga; 3 - Otimizar a instalação; 4 - Fornecer maior potência.'
+    },
+    { 
+        nome: "barramento monofase 12 disjuntor tigre", 
+        codigo: "00202", 
+        img: "https://cdn.awsli.com.br/1659/1659184/produto/118684901/8f86094246.jpg",
+        infos: 'A "barra monofásica" é um termo utilizado no contexto de instalações elétricas, e não em treinos de academia. A sua função é distribuir a corrente elétrica de uma única fase para vários pontos (como disjuntores) dentro de um quadro de distribuição, proporcionando uma instalação mais segura e organizada. Sua função principal é: 1 - Interligar disjuntores; 2 - Balancear a carga; 3 - Otimizar a instalação; 4 - Fornecer maior potência.' 
+    },
     { nome: "varao cortina", codigo: "12161", img: "https://m.media-amazon.com/images/I/61FPke5Jq8L._AC_SX679_.jpg" },
     { nome: "cirandao cafe 1.20mt sao jorge", codigo: "05512", img: "https://lh6.googleusercontent.com/proxy/n4ilA7AcUjbs2ajXToB6YOw8biSBVbgImb7-lPfRlwNFcu1cVbVcT6pccrkQwfPNo8QARvn2ktU_XTo_LqjuCtXlYMTZIP3J0log" },
     { nome: "tarraxa 3/4 meikon", codigo: "05151", img: "https://cdn.leroymerlin.com.br/products/tarraxa_para_tubo_de_pvc_3_4_momfort_90780620_0001_600x600.jpg" },
@@ -22,7 +97,6 @@ const Produtos = [
     { nome: "lima triangular para serrote 4 kl 309 starret", codigo: "04621", img: "https://hbrflex.fbitsstatic.net/img/p/lima-para-serrote-triangular-de-4-100mm-starrett-l309-304-74048/261782-3.jpg?w=350&h=350&v=no-change&qs=ignore" },
     { nome: "kit giz de linha azul 30m star", codigo: "21777", img: "https://www.starfer.com.br/octopus/design/images/143/products/b/07021003.jpg" },
     { nome: "cinto couro 11 divisoes + porta trena lotus", codigo: "10332", img: "https://lotuscomercial.com.br/wp-content/uploads/2024/09/3445-1.jpg" },
-
     { nome: "roldana com gancho 10cm 80kg tenace", codigo: "21612", img: "https://static.corremol.com.br/public/corremol/imagens/produtos/roldana-para-cabo-10cm-metal-com-gancho-80kg-tenace-1pc-679a3e5d48a8e.jpg" },
     { nome: "esquadro cabo de pvc 10 simet", codigo: "02634", img: "https://img.lojadomecanico.com.br/IMAGENS/31/270/111713/Esquadro-Metalico-10-Pol-com-Cabo-em-PVC-thompson-2371.JPG" },
     { nome: "alicate crimpador rj11 r rj45 lotus", codigo: "26446", img: "https://cdn.awsli.com.br/2500x2500/2778/2778638/produto/315891976/e9d3fa7e79d67094a848ebb5337219f5-isvqjmuczb.jpg" },
@@ -36,7 +110,6 @@ const Produtos = [
     { nome: "jogo serras copo bimetal 13 pecas + estojo lotus", codigo: "26879", img: "https://http2.mlstatic.com/D_NQ_NP_855738-MLB85299366414_062025-O-jogo-de-serra-copo-bimetal-13-pecas-com-estojo-lotus.webp" },
     { nome: "mandril starfer 10mm 3/8 starfer", codigo: "25504", img: "https://http2.mlstatic.com/D_NQ_NP_939826-MLU73589115465_122023-O.webp" },
     { nome: "linha pedreiro 100mt polibel", codigo: "20944", img: "https://a-static.mlcdn.com.br/800x560/linha-pedreiro-polibel-tranc-100m-polietileno-c-12pcs/mundialskyltda/7898078640029/6d4d1aede3a72d21d58a01236526ae45.jpeg" },
-
     { nome: "bezolim desincrustante acido l-440", codigo: "25808", img: "https://cdn.awsli.com.br/800x800/338/338110/produto/2304666692c9e1844ba.jpg" },
     { nome: "lava arroz ercaplast", codigo: "22981", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc1g4aiDlmkSbkLicoQ7ou1Evf6JWvnla6jw&s" },
     { nome: "porta talheres comtampa 4 div ercaplast", codigo: "22980", img: "https://www.ercaplast.com.br/public/produtos/511/511-porta-talheres-s-tampa-4-div-rec_g.jpg" },
@@ -49,7 +122,6 @@ const Produtos = [
     { nome: "cabideiro duplo nogueira com 3 ganchos prat", codigo: "25980", img: "https://gerbran.cdn.magazord.com.br/img/2025/03/produto/10493/30337.png?ims=600x600" },
     { nome: "aquecedor a gas de rua lz750bp 1 banheiro gn lorenzetti", codigo: "16184", img: "https://a-static.mlcdn.com.br/1500x1500/aquecedor-gas-lz-750-gn-gas-natural-lorenzetti/mbkstore/15601568399/ae61646f6622e2b98879ab31a4f27dfd.jpeg" },
     { nome: "jogo de soquete e bits 3/8 com 40 pecas starfer", codigo: "03656", img: "https://images.tcdn.com.br/img/img_prod/1077471/jogo_de_soquetes_com_pontas_bits_catraca_e_adaptador_3_8_com_40_pecas_starfer_2369_1_8123b36f54b88a403b1b25676f638db3.jpg" },
-
     { nome: "tubo cabideiro 60cm cinza prat", codigo: "17072", img: "https://voceconstroi.fbitsstatic.net/img/p/tubo-cabideiro-oval-de-ferro-espacofix-cromado-3m-72087/258788-1.jpg?w=1000&h=1000&v=202502191855" },
     { nome: "barra de apoio aluminio polido 50cm dinox", codigo: "21541", img: "https://armazemcoral.agilecdn.com.br/841838.png?v=26-2318132018" },
     { nome: "camara para carrinho de mao 3.25x8 starfer", codigo: "09364", img: "https://http2.mlstatic.com/D_NQ_NP_884930-MLU73576852794_122023-O.webp" },
@@ -62,7 +134,6 @@ const Produtos = [
     { nome: "medidor polifasico eletronico vector", codigo: "21938", img: "https://nansen.com.br/wp-content/uploads/2024/06/vector3.png" },
     { nome: "mop esfregao giratorio essencial com cesto 8lt rayco", codigo: "26219", img: "https://m.magazineluiza.com.br/a-static/420x420/mop-giratorio-rayco-com-balde-8-litros-e-cabo-em-aco-inox/lojavoudechinelo/mo-ray-gira-nsa-nsa-uni/e8be7019f8edcab4b4e8764b4d951f77.jpeg" },
     { nome: "carretel aparador grama 1.8mm/8mt tramontina", codigo: "12333", img: "https://www.lojaeletrica.com.br/media/catalog/product/2/2/2291103480013_Carretel_1_fio_Nylon_1.8mm_Tramontina_Aparador_Grama_8m_78799X463.JPG?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265" },
-
     { nome: "pasta para limpeza limp. 500g tek", codigo: "04521", img: "https://steffen.com.br/wp-content/uploads/2022/12/1617-scaled.jpg" },
     { nome: "fio nylon 1.8mm/10m starfer", codigo: "25315", img: "https://http2.mlstatic.com/D_Q_NP_813304-MLU75198956906_032024-O.webp" },
     { nome: "esguicho reto 3504 herc", codigo: "20219", img: "https://www.rcdshop.com.br/image/cache/catalog/imagens_adicionais_70/102423_7-500x500.jpg" },
@@ -78,7 +149,6 @@ const Produtos = [
     { nome: "ventosa 1p 115mm 25kg starfer car", codigo: "25056", img: "https://ecoms1.com/51372/imgs/normal/@v3/1680643828939-mqaodjjkg3r3ycyqtd6y2qrifpfn8cluov7g.jpg.avif" },
     { nome: "alicate nivelador universal aco nivelapiso", codigo: "22292", img: "https://distacdistribuidora.agilecdn.com.br/999946_1_1.jpg" },
     { nome: "rodel 07x80mm hd tec cortag", codigo: "02323", img: "https://images.tcdn.com.br/img/img_prod/1371987/rodel_07x80mm_hd_tec_cortag_c_1_24211_1_0dca12ee55c8a784db9e131328e1f435.jpg" },
-
     { nome: "ralo linear invisivel 70cm branco tigre", codigo: "25010", img: "https://telhanorte.vtexassets.com/arquivos/ids/1191645/Ralo-linear-invisivel-70cm-br-Tigre-1378848.jpg?v=637339761911170000" },
     { nome: "filtro linha 3 tomadas pop branco fc", codigo: "06813", img: "https://milium.vtexassets.com/arquivos/ids/290742-800-450?v=638454414192570000&width=800&height=450&aspect=true" },
     { nome: "divisor antena 1 entrada e 2 saidas fc", codigo: "05981", img: "https://cdn.leroymerlin.com.br/products/divisor_ant_2_saidas_1ghz_multi_23139_88072383_0003_600x600.jpg" },
@@ -98,12 +168,10 @@ const Produtos = [
     { nome: "telefone com fio mesa pleno preto intelbras", codigo: "22364", img: "https://elastobor.vtexassets.com/arquivos/ids/216901/TELEFONE-COM-FIO-INTELBRAS-PLENO-PRETO.jpg?v=637566801713670000" },
     { nome: "conversor gravador digital de tv cd700 intelbras", codigo: "22318", img: "https://images.tcdn.com.br/img/img_prod/791400/conversor_de_sinal_digital_intelbras_cd700_com_gravador_e_controle_remoto_10251_1_4b7987288a237c407a25b8d9eb295a9d.png" },
     { nome: "haste para telha 1/4x300 com 1 martelao", codigo: "06179", img: "https://telhanorte.vtexassets.com/arquivos/ids/341172/Conjunto-haste-Beltools-1-4-x-300-com-arruela-de-vedacao-reta-1615858.jpg?v=638761739488670000" },
-
     { nome: "conjunto grelha de aluminio branco 10x100 metais", codigo: "03233", img: "https://chatuba.vtexassets.com/arquivos/ids/172568/Conjunto-Grelha-Aluminio-Branco-10x100-LG-Mais---30472.jpg?v=637547128618330000" },
     { nome: "conjunto grelha 10x100 aluminio polido gda", codigo: "15250", img: "https://www.cassol.com.br/pub/media/catalog/product/2/0/2050966_1.jpg" },
     { nome: "vergalhao 8mm 5/16 com 12mt dobrado", codigo: "00004", img: "https://www.ecompletocdn.com.br/i/fp/1517/1223211_31.jpg" },
     { nome: "guia passa fio perlux 15mt perlex", codigo: "25854", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQC_R4zfYTaBvC-x28vcljfF0zI2O-lqS-dA&s" },
-
     { nome: "formao 1' starfer", codigo: "24541", img: "https://ultramaquinas.fbitsstatic.net/img/p/formao-chanfrado-1-starfer-73085/260129.jpg?w=600&h=600&v=no-value" },
     { nome: "bloco de espuma camurça castor", codigo: "20491", img: "https://cdn.kingouro.com.br/produtos/29935/29935.jpg" },
     { nome: "grampo aperto automatico 6 lotus", codigo: "26864", img: "https://lotuscomercial.com.br/wp-content/uploads/2024/09/3160-1.jpg" },
@@ -119,7 +187,6 @@ const Produtos = [
     { nome: "clips para cabo aço 3/16 com 2 martelão", codigo: "11873", img: "https://cdn.b4c.inf.br/storage/multiseg/1000/clips-grampo-para-cabo-de-aco-476mm-316-1657548102.jpg" },
     { nome: "arame galvanizado fio 18 10mt encartelado prorocha", codigo: "20350", img: "https://cdn.awsli.com.br/300x300/326/326338/produto/63087217/fbcf4a86b9.jpg" },
     { nome: "raquete mata inseto a pilha starfer", codigo: "25869", img: "https://americanas.vtexassets.com/arquivos/ids/23142939/2658102978_1_xlarge.jpg?v=638755291204100000" },
-    { nome: "barra trif 80a 440v 16p din steck", codigo: "08617", img: "https://http2.mlstatic.com/D_NQ_NP_644567-MLB44795487090_022021-O.webp" },
     { nome: "spot basic preto 1xe27 avant", codigo: "26253", img: "https://avantlux.com.br/wp-content/uploads/2023/11/346005806-SPOT-BASIC-1XE27-PF-Single-Spot-E27-without-lamp-BLACK-e1711021270569-2.png" },
     { nome: "lampada halogena 1000w 127v flc", codigo: "10902", img: "https://http2.mlstatic.com/D_NQ_NP_754076-MLB87563900936_072025-O-lmpada-halogena-r7s-1000w-127v-189mm-3000k-flc.webp" },
     { nome: "controle para fita led colorida rgb", codigo: "27102", img: "https://cdn.awsli.com.br/800x800/957/957734/produto/941996431fbd857555.jpg" },
@@ -149,7 +216,6 @@ const Produtos = [
     { nome: "refil para maçarico portatil 5t 453gr gás mapp italgas", codigo: "05129", img: "https://images.tcdn.com.br/img/img_prod/602916/refil_macarico_eolo_carga_gas_mapp_para_macarico_portatil_cilindro_400g_23150622_2_1583577a128412c28e792d1b5fa14661.jpeg" },
     { nome: "suporte para botijão gás 053 prorocha", codigo: "11330", img: "https://a-static.mlcdn.com.br/280x210/suporte-para-botijao-de-gas-reforcado-com-rodizios-053-niquelart/bazarbellato/a252bed058af11ef9f7c4201ac18501b/d1ffd2db92763328f0f14e2472292018.jpeg" },
     { nome: "pé de aluminio geladeira ou fogão prorocha", codigo: "16074", img: "https://http2.mlstatic.com/D_NQ_NP_951806-MLB41991170837_052020-O-pe-para-geladeira-fogo-freezer-de-aluminio-polido-pesado.webp" },
-
     { nome: "tampa para ralo prorocha", codigo: "20521", img: "https://m.media-amazon.com/images/I/51CQ6AY104L.jpg" },
     { nome: "veda junta 73gr mundial prime", codigo: "11953", img: "https://cdn.diferpan.com.br/produtos/18805/18805.jpg" },
     { nome: "acabamento t3 aqua registro 7974 1.1/4/1;1/2 fabrimar", codigo: "01151", img: "https://http2.mlstatic.com/D_NQ_NP_854381-MLB76367029929_052024-O-acabamento-p-registro-banheiro-aquarius-t3-1-12-e-1-14.webp" },
@@ -177,12 +243,9 @@ const Produtos = [
     { nome: "pasta lubrificante bisnaga 400g tigre", codigo: "00485", img: "https://images.tcdn.com.br/img/img_prod/1213944/pasta_lubrificante_bisnaga_400g_tigre_2925_1_6814a0b19377c35a69804ba6abe066e4_20240314134755.jpg" },
     { nome: "ralo linear invisivel 50cm branco tigre", codigo: "25009", img: "https://telhanorte.vtexassets.com/arquivos/ids/1191642/Ralo-linear-invisivel-50cm-br-Tigre-1378830.jpg?v=637339761908430000" },
     { nome: "trilho 200cm branco prat-k", codigo: "07451", img: "https://telhanorte.vtexassets.com/arquivos/ids/307228-650-auto" },
-
     { nome: "massa corrida pva 18lt suvinil", codigo: "04262", img: "https://cdn.iset.io/assets/52257/produtos/149/massa-corrida-18lt.png" },
     { nome: "tinta acr fosco int branco neve 18lt glasu suvinil", codigo: "25829", img: "https://tuacasaferragem.com.br/wp-content/uploads/2024/10/img_008833_1.webp" },
-
     { nome: "barramento terra 11 terminais steck", codigo: "08618", img: "https://cdn.awsli.com.br/300x300/445/445768/produto/89334663/09af2afc68.jpg" },
-    { nome: "barramento monofase 12 disjuntor tigre", codigo: "00202", img: "https://cdn.awsli.com.br/1659/1659184/produto/118684901/8f86094246.jpg" },
     { nome: "modulo dimmer universal 300w 817", codigo: "09950", img: "https://cdn.leroymerlin.com.br/products/modulo_dimmer_universal_110v_pw_eletronica_86644572_0001_300x300.jpg" },
     { nome: "conduite modulo telefone 4p rj11", codigo: "13114", img: "https://images.tcdn.com.br/img/img_prod/1249590/modulo_tomada_4p_padrao_telebras_com_rj11_2_fios_1m_branco_lunare_prm47401_schneider_5237_1_1ec7e94e47cb71794062089cd62588b5.png" },
     { nome: "conduite modulo int 3 sessoes 10a tramontina", codigo: "09258", img: "https://images.tcdn.com.br/img/img_prod/1385440/mdulo_interruptor_intermedirio_10a_branco_liz_tram_1_20250826155559_c4d338a930be.png" },
@@ -230,52 +293,29 @@ const Produtos = [
     { nome: "disco de borracha 7 max", codigo: "12868", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3r39LYlk-_Xc9O-gT_hkSLYMx2fh6WHXU1w&s" },
     { nome: "grade redonda branca com tela gr100 itc", codigo: "20182", img: "https://cdn.awsli.com.br/2500x2500/2716/2716027/produto/256036200/gr100-dze7mpdicb.png" },
     { nome: "papelao ondulado 1.20x30mt oruam", codigo: "11307", img: "https://http2.mlstatic.com/D_NQ_NP_2X_760241-MLB89536231614_082025-F-papelo-ondulado-120x30-metros.webp" },
-    { nome: "tinta zarcao laranja base solvente 900ml extracril", codigo: "24084", img: "https://images.tcdn.com.br/img/img_prod/1392010/zarcao_sintetico_laranja_900ml_extracrill_3723_1_2222a8c45ef5f9725024d8962d15fcb2.jpg" },
     { nome: "arame queimado 1kg - martelao", codigo: "25604", img: "https://lojaqueroquero.vtexassets.com/arquivos/ids/3251156-800-800?v=638242363881300000&width=800&height=800&aspect=true" },
-    { nome: "vedalage preto gl 3,6l - viapol", codigo: "25052", img: "https://a-static.mlcdn.com.br/1500x1500/viapol-vedalage-preto-gl-36-30001350/comprespcom/30001350/fe914ddef88616816ae654d277174618.jpeg" },
-    { nome: "primer viabit base solvente 900ml viapol", codigo: "10186", img: "https://www.wermar.com.br/app/assets/images/dinamica/produto/2960/cor_0/77535-primer--viabit--900ml--viapol-100625-c05123.jpg" },
-    { nome: "ecoprimer galao 3.6lt viapol", codigo: "10194", img: "https://http2.mlstatic.com/D_644184-MLB91339705756_092025-O.jpg" },
-    { nome: "contra umidade galao 3.6lt viapol", codigo: "08928", img: "https://casamimosa1.vtexassets.com/arquivos/ids/185799-800-800?v=638011484503430000&width=800&height=800&aspect=true" },
-    { nome: "viafix galao gl 3.6kg - viapol", codigo: "08926", img: "https://http2.mlstatic.com/D_981421-MLB82610851521_022025-O.jpg" },
     { nome: "catalisador para tinta epoxi base solvente 900ml coral", codigo: "24226", img: "https://cdn.awsli.com.br/2500x2500/1593/1593344/produto/94490300/20240912104234321720ea8d6747-a4snkckh9n.jpg" },
     { nome: "tinta esmalte sintetica ceramica brilho 900ml extracrill", codigo: "24123", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGjAH_Kk_hdDYx7MgDXPAMFZommt3JPk9tSA&s" },
-    {
-        nome: "verniz sparlack mar fosco natural gl co", codigo: "04415", img:
-            "https://cdn.awsli.com.br/600x450/941/941759/produto/188367366/sparlack-extra-00-tr8kbjcfc4.png"
-    },
+    { nome: "verniz sparlack mar fosco natural gl co", codigo: "04415", img: "https://cdn.awsli.com.br/600x450/941/941759/produto/188367366/sparlack-extra-00-tr8kbjcfc4.png" },
     { nome: "corante liquido xadrez preto 50ml sherw", codigo: "01241", img: "https://lojagubler.cdn.magazord.com.br/img/2024/01/produto/4239/corante-xadrez-sherwin-williams-preto.png?ims=600x600" },
     { nome: "bandeja para pintura 23cm preto tigre", codigo: "04611", img: "https://m.media-amazon.com/images/I/51Mhp1ds5GL.jpg" },
     { nome: "fita crepe 48mm x 50mt tigre", codigo: "04390", img: "https://cdn.awsli.com.br/600x450/941/941759/produto/2651157712095f653e5.jpg" },
-
     { nome: "fita crepe mask 18x50m adelbras", codigo: "24187", img: "https://dfxe7ekqtze9q.cloudfront.net/produtos/produtos/25680.webp" },
-
     { nome: "kit pintura 3pcs preto 1541 p.tig", codigo: "07147", img: "https://images.tcdn.com.br/img/img_prod/775365/kit_1541_basico_paredes_3_pcs_3131_1_5df971a51e64f28fe7bbb6664bf3c445.png" },
-
     { nome: "massa corrida pva 3,6gl sarely", codigo: "24211", img: "https://extracrill.com.br/wp-content/uploads/2024/06/galao-3-6l-preto-tampa-e-alca-preta-sarellycomplementos.png" },
-
     { nome: "tinta acrilica fosco branco 3.6gl extracrill", codigo: "22022", img: "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m1ulhvhhk0iyb9" },
-
     { nome: "tinta acrilica coralar refresco 3.6l galao coral", codigo: "23029", img: "https://http2.mlstatic.com/D_NQ_NP_721094-MLB90374525219_082025-O.webp" },
-
     { nome: "resina base solvente incolor 3.6gl - extracrill", codigo: "24087", img: "https://cdn.grupolle.com.br/produtos/33443/33443.jpg" },
-
     { nome: "resina base agua ceramica 3.6gl - extracrill", codigo: "24085", img: "https://cdn.grupolle.com.br/produtos/33445/33445.jpg" },
-
     { nome: "vedacit massa asfaltica impermeabilizante galao 3.9kg vedacit", codigo: "03383", img: "https://normatel.fbitsstatic.net/img/p/frio-asfalto-galao-3-9kg-preto-vedacit-72609/259152.jpg?w=770&h=770&v=no-value" },
-
     { nome: "bianco 3.6gl vedacit", codigo: "06997", img: "https://joli.vtexassets.com/arquivos/ids/607472-800-800?v=638025041640600000&width=800&height=800&aspect=true" },
-
     { nome: "drykofix chapisco 3.6gl dryko", codigo: "21153", img: "https://brutools.com.br/matcon/2013-large_default/adesivo-para-chapisco-drykofix-36l-galao-dryko-item-similar-ao-bianco.jpg" },
-
     { nome: "sika top 100 cx 18kg sika", codigo: "01949", img: "https://cdn.awsli.com.br/2261/2261856/produto/215569451/chatgpt-image-11-de-ago--de-2025--12_01_51-m3ut3ncglt.png" },
-
     { nome: "fita demarcacao 48x14 preto e amarelo adelbras", codigo: "24747", img: "https://img.kalunga.com.br/fotosdeprodutos/301102z.jpg" },
     { nome: "fita antiderrapante preta 50mmx5m lixas tatu", codigo: "23938", img: "https://cdn.awsli.com.br/800x800/1659/1659184/produto/170952197/8dca19f9ad.jpg" },
     { nome: "betume garrafa 500ml lacxe", codigo: "26585", img: "https://a-static.mlcdn.com.br/800x800/betume-500ml-lacxe-envelhecedor-de-madeira/amj/15814114272/fef5d44c6a0f7dd015b9a22048076827.jpeg" },
     { nome: "lixa madeira e massa 120 tatu", codigo: "03716", img: "https://cdn.awsli.com.br/600x700/1166/1166976/produto/170685475/c1065c20ca.jpg" },
-
     { nome: "sika 1 saco sika", codigo: "01946", img: "https://images.tcdn.com.br/img/img_prod/1250632/sika_1_saco_1_litro_579_1_e1e2e2e753be553f999da427dd71bf51.jpeg" },
-
     { nome: "kit pintura 5 peças preto atlas", codigo: "14891", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJzLmzrA5k9rjQKxPaU0Hs-vZjaJm24qqUeg&s" },
     { nome: "dimmer rot branco 127v 805 penta watt", codigo: "04216", img: "https://images.tcdn.com.br/img/img_prod/861603/dimmer_externo_127v_branco_penta_watt_105485_1_a22638d5028413c966a63e33af869370.jpg" },
     { nome: "limpa pneus 300ml spray mundial prime", codigo: "10278", img: "https://cosama.vteximg.com.br/arquivos/ids/171454-1000-1000/limpa_pneus_spray_mp10_300ml_mundial_prime.jpg?v=638176118522370000" },
@@ -293,9 +333,7 @@ const Produtos = [
     { nome: "boia automatica para bomba eletrica boia 25 ap inferior e superior 1.2m coplasa", codigo: "03665", img: "https://a-static.mlcdn.com.br/280x210/chave-eletro-boia-automatica-de-nivel-bomba-agua-15a-coplasa/monteirotintas/ae2f411474fd11efa4634201ac18501b/dac5679974eff2aed0c26bc32a07e0ec.jpeg" },
     { nome: "duto ventilação flexivel 125mm itc", codigo: "20175", img: "https://cdn.leroymerlin.com.br/products/tubo_flexivel_de_aluminio_125_mmx5_metros_itc_90438733_0001_1800x1800.jpg" },
     { nome: "escova de aço circular 6x3/4", codigo: "04888", img: "https://img.lojadomecanico.com.br/IMAGENS/37/433/89813/Escova-de-Aco-Circular-Ondulada-6x34-Pol-carbografite-012257612-1.JPG" },
-
     { nome: "jogo com 5 pontas montadas hastes 1/4 - lotus", codigo: "26645", img: "https://cdn.awsli.com.br/2264/2264565/produto/1394915134e1032258c.jpg" },
-
     { nome: "grade de ventilação redonda 150mm branca - global", codigo: "23343", img: "https://hiperfer.cdn.magazord.com.br/img/2020/04/produto/5601/1/home/grade-itc-100mm-2.jpg" },
     { nome: "clarificante genflock 1l genco", codigo: "04785", img: "https://cdn.dooca.store/72923/products/genfloc-3_640x640+fill_ffffff.png?v=1684339419&webp=0" },
     { nome: "limpa borda 1l genco", codigo: "04787", img: "https://cobasi.vteximg.com.br/arquivos/ids/1061162/Limpa-Borda-Genco.png?v=638621069084070000" },
@@ -312,8 +350,6 @@ const Produtos = [
     { nome: "plastico bolha 130x100mt santa maria", codigo: "02297", img: "https://http2.mlstatic.com/D_939902-MLA95530825234_102025-C.jpg" },
     { nome: "kit metalo 60cm com espelheira pistache mg", codigo: "25165", img: "https://comercialbatista.agilecdn.com.br/21526_1.jpg" },
     { nome: "tecbonde 1kg quartzolit", codigo: "13865", img: "https://m.media-amazon.com/images/I/718Xt6HWd+S.jpg" },
-
-
     { nome: "rejunte 1kg acricilo branco quartzolit", codigo: "03470", img: "https://images.tcdn.com.br/img/img_prod/1067787/rejunte_quartzolit_acrilico_branco_1kg_1023_1_fc715ec57f3622545c7ec671b5433957.jpg" },
     { nome: "selador acrilico 18lt extracril", codigo: "24091", img: "https://acdn-us.mitiendanube.com/stores/002/204/188/products/selador-acrilico-extracrill-54a2e997a14e60465517456119823139-640-0.jpg" },
     { nome: "selador acrilico 3,6lt extracril", codigo: "24092", img: "https://cdn.grupolle.com.br/produtos/33442/33442.jpg" },
@@ -325,7 +361,6 @@ const Produtos = [
     { nome: "escada de aluminio 8 degraus alumasa", codigo: "18301", img: "https://www.alumasa.com.br/thumbs/500/431/0202202415592900000041796.jpg" },
     { nome: "escada de aluminio 10 degraus alumasa", codigo: "20876", img: "https://www.alumasa.com.br/thumbs/500/431/24092019101509000000146363.jpg" },
     { nome: "drywall cantoneira aresta perfurada gypsteel", codigo: "23442", img: "https://cdn.awsli.com.br/800x800/2745/2745670/produto/267932219/163575-1200-1200-i35kauqhp7.png" },
-
     { nome: "aduela caixonete 13x2,5cm mista (jogo) - leon madeiras", codigo: "03823", img: "https://www.casanovamadeiras.com.br/553-thickbox_default/aduela-19cm-com-alisar-5cm.jpg" },
     { nome: "aduela 15x2,5cm mista (jogo) - martelão", codigo: "05008", img: "https://www.casanovamadeiras.com.br/553-thickbox_default/aduela-19cm-com-alisar-5cm.jpg" },
     { nome: "ferrolho 3 encartelado prorocha", codigo: "20341", img: "https://tupan.agilecdn.com.br/68820_1.jpg" },
@@ -342,6 +377,62 @@ const Produtos = [
     { nome: "broca aço rapido 9/32 7,14mm lotus", codigo: "22287", img: "https://images.tcdn.com.br/img/img_prod/864693/broca_de_aco_rapido_6_00mm_irwin_187_1_fb77ae5c81d92c3bcf1d9a01a844592c.jpg" },
     { nome: 'cuba inox pad 480 x 300 x 110mm n1 rasa', codigo: '17873', img: "https://images.tcdn.com.br/img/img_prod/884673/cuba_no_1_rasa_46x30x11cm_aco_inox_430_polida_175_1_85f438d507ac34b6aa72789d8515c09f.jpeg" },
     { nome: 'cuba inox pad 460 x 300 x 140mm n1 media', codigo: '22892', img: "https://padovani.vtexassets.com/arquivos/ids/171151/Cuba-para-Cozinha-em-Aco-Inox-430-Plus-N1-46x30x14cm-com-Furo-de-Valvula-de-3-1-2---GhelPlus1.jpg?v=636724305585200000" },
+    { nome: 'conector piranha perfurante derivador cdp 150.35 - taf', codigo: '27106', img: 'https://http2.mlstatic.com/D_NQ_NP_831780-MLB93481240951_092025-O.webp' },
+    { nome: 'conector piranha perfurante derivador cdp 95.10 - taf', codigo: '27105', img: 'https://distacdistribuidora.agilecdn.com.br/293089_1_1.jpg' },
+    { nome: 'conector louça trip.grande 16mm hf', codigo: '13386', img: 'https://cdn.distribuidoralopes.com.br/produtos/33619/33619.jpg' },
+    { nome: 'parafuso caixa de luz 6x32x1 c/5 martelao', codigo: '06181', img: 'https://http2.mlstatic.com/D_NQ_NP_739604-MLA95681449641_102025-O.webp' },
+    { nome: 'parafuso caixa de luz 6x32x3 c/5 martelao', codigo: '06185', img: 'https://eletricabichuette.jetassets.com.br/produto/multifotos/00100000000016546001.jpg' },
+    { nome: 'fita isolante profissional 20mt tigre', codigo: '25863', img: 'https://lojaagrometal.fbitsstatic.net/img/p/fita-isolante-profissional-19mm-x-20-metros-54502605-tigre-81795/268305-1.jpg?w=400&h=400&v=no-change&qs=ignore' },
+    { nome: 'fita isolante alta tensao 19mm x 10mt 3M', codigo: '03814', img: 'https://palaciodasferramentas.com.br/media/catalog/product/0/3/03302_01.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=600&width=600&canvas=600:600' },
+    { nome: 'regulador de gás com mangueira abracadeira - imar', codigo: '09803', img: 'https://ferramentasgerais.vteximg.com.br/arquivos/ids/990816/Regulador-para-Gas-Blindado-Tampa-ABS-com-mangueira-080m-e-Abracadeira----Imar---0525131---IMAR.jpg?v=638929258917770000' },
+    { nome: 'kit regulador de gás com mangueira e abraçadeira - imar', codigo: '23669', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo2fxYnhtCvpP0-Vv_c_74dOBsGIqQwq7Kkg&s' },
+    { nome: 'gás fogareiro 400ml - mundial prime', codigo: '27174', img: 'https://http2.mlstatic.com/D_NQ_NP_845153-MLB93165373990_092025-O-gas-butano-mundial-prime-refil-400ml-fogareiro-macarico.webp' },
+    { nome: 'torneira monocomando ang-6601b cozinha bancada black -import', codigo: '26923', img: 'https://http2.mlstatic.com/D_NQ_NP_2X_817504-MLB73781357560_012024-N-torneira-cozinha-gourmet-monocomando-black-preto-fosco-50-cm.webp' },
+    { nome: 'refil p/ maçarico portatil 2it 227gr italgas', codigo: '14553', img: 'https://http2.mlstatic.com/D_NQ_NP_2X_795717-MLB81359317210_122024-F.webp' },
+    { nome: 'maçarico portatil 3lt italgas', codigo: '05126', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBGdOj8FX68LxVA3qpf5xPO6EiO5PXPLyw-A&s' },
+    { nome: 'vedaspray rejunte 400ml vedacit', codigo: '15631', img: 'https://padovani.vtexassets.com/arquivos/ids/177983/vedaspary-rejuntes-otto-baugart.jpg?v=637213578493870000' },
+    { nome: 'rejunte epoxi 1 kg cinza platina quartzolit', codigo: '21167', img: 'https://tupan.agilecdn.com.br/944530_1_1.jpg?v=36-2295354270' },
+    { nome: 'suporte para butijão de gás 053 prorocha', codigo: '11330', img: 'https://cdn.awsli.com.br/300x300/1233/1233245/produto/50354902/5fd9086cda.jpg' },
+    { nome: 'pé de aluminio geladeira/fogão prorocha', codigo: '16074', img: 'https://lh6.googleusercontent.com/proxy/92cTOyR1-if65cxToIfEPSC-HuzVvQinU7PceS3gwQx5YwfCBQd01itxTnoLckGMh7Obd0jRrReM3cQ-9IJEhyrF2aeTCiZPzHICjXDbVmNX5cQ' },
+    { nome: 'masseira bandeja para massa - metasu', codigo: '05330', img: 'https://todimo.vtexassets.com/arquivos/ids/176782/masseira-pvc-metasul-20l-preta-63x39x14-011001013-023587-023587-1.jpg?v=637282765690700000' },
+    { nome: 'masseira pequena 40l azul fortlev', codigo: '09212', img: 'https://static1.efacil.com.br/wcsstore/ExtendedSitesCatalogAssetStore/Imagens/360/409991_02.jpg' },
+    { nome: 'ligacao rigido 40cm gás 1/2 jacwal', codigo: '06101', img: 'https://dauge.com.br/wp-content/uploads/2020/05/ligacao-flexivel-p.-gas-0.30m-tombak-1-2-glp-gn-015743-jackwal-300x248.jpg' },
+    { nome: 'mangueira de gás 80cm - usifer', codigo: '26524', img: 'https://cdn.awsli.com.br/2500x2500/1869/1869988/produto/116291259/fff01887a6.jpg' },
+    { nome: 'mangueira de gás 1mt - usifer', codigo: '26528', img: 'https://http2.mlstatic.com/D_NQ_NP_948657-MLB30783546496_052019-O.webp' },
+    { nome: 'mangueira de gás 1.2mt - usifer', codigo: '26523', img: 'https://http2.mlstatic.com/D_NQ_NP_2X_912596-MLB76686988386_062024-F.webp' },
+    { nome: 'mangueira de gás 1.5mt - usifer', codigo: '26526', img: 'https://http2.mlstatic.com/D_NQ_NP_2X_977152-MLB80770046525_112024-F.webp' },
+    { nome: 'maçarico regulavel gás - starfer', codigo: '27452', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTPbFo0E-F9Xi5F7xQ8wzeoZEtFyfQNL4X4g&s' },
+    { nome: 'pistola para cola quente 15w 127v/220v - foxlux', codigo: '12547', img: 'https://www.atacarejonet.com.br/fotog/b6e2d4751459ba3e.webp' },
+    { nome: 'cola quente bastão 7.2x100mt fina com 10 - hf', codigo: '26774', img: 'https://m.media-amazon.com/images/I/61gvz2VM9zL._AC_UF894,1000_QL80_.jpg' },
+    { nome: 'emenda mangueira 3/8 zamac', codigo: '25531', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFpia3WRJsor1rTSTJimmmKG3OtQCbDt9eQQ&s' },
+    { nome: 'emenda mangueira 1/2 zamac', codigo: '25532', img: 'https://cdn.awsli.com.br/300x300/2649/2649357/produto/275059749/80cm--1--ahx09p90lc.png' },
+    { nome: 'soquete porcelana com rabicho gu10 - perlex', codigo: '27190', img: 'https://a-static.mlcdn.com.br/420x420/kit-25-soquete-bocal-lampada-dicroica-gu10-ceramica-rabicho-perlex/olistsp/ospcvvhexk2lgdes/f23bc34b1919d66b89c581749a12ea81.jpeg' },
+    { nome: 'soquete para lampada dicroica voltaggio', codigo: '19673', img: 'https://construcasabordignon.vteximg.com.br/arquivos/ids/170329-1000-1000/17552.jpg?v=638860482346170000' },
+    { nome: 'bocal louça e-27 - perlex', codigo: '20745', img: 'https://wingdistribuidora.agilecdn.com.br/11545_1.jpg?v=439-1834185816' },
+    { nome: 'cantoneira em "L" 3/4 branca reisa', codigo: '04774', img: 'https://img.olx.com.br/thumbs700x500/23/239494856557051.webp' },
+    { nome: 'prego telha 500gr 18x30 - josmantec', codigo: '11257', img: 'https://assets-titocec.egondola.app/v1/pro_11448_e.jpg' },
+    { nome: 'kit parafuso e vedação colonial terracota aforte c/20 unidades', codigo: '13154', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBujnHfzBoJ_n8MmI7gT-JgoFG9Xr05LZIHg&s' },
+    { nome: 'kit completo 2 1/2 (telha plan e mini onda) ceramico c/10 unidades precon', codigo: '26213', img: 'https://cdn.leroymerlin.com.br/products/kit_para_vedacao_e_fixacao_de_telhas_plan_2_1_2_10_unidades_92265670_2e9c_600x600.jpg' },
+    { nome: 'parafuso telha 5/16x130mm jomarca', codigo: '16905', img: 'https://cdn.awsli.com.br/2500x2500/1709/1709002/produto/260099540/150w--13--snmtn6cyu1.jpg' },
+    { nome: 'parafuso telha 5/16x150mm jomarca', codigo: '16906', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG8vDIS-DOqV95UHk6x4lThPvXYXe82c1WgQ&s' },
+    { nome: 'TOMADA PUMALUX 10A BRANCO 2311 - PERLEX', codigo: '27395', img: 'https://cdn.leroymerlin.com.br/products/conjunto_1_tomada_10a___1_tomada_20a_perlex_pumalux_231115_1568332211_e1f6_600x600.jpg' },
+    { nome: 'Proteraio lavadora/secadora 20A 127V - penta watt', codigo: '27173', img: 'https://http2.mlstatic.com/D_NQ_NP_873480-MLB92318944229_092025-O.webp' },
+    { nome: 'peneira feijão aro pvc 55cm são jorge', codigo: '08962', img: 'https://casacardao.agilecdn.com.br/24411.jpg' },
+    { nome: 'bomba de ar para encher pneu starfer', codigo: '12395', img: 'https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/laborave/catalog/api/laborave_integrac/63136cbaadb18.jpg' },
+    { nome: 'fivela pp losango colorido bella arte', codigo: '17537', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ0Apluz498HDwuWjcYr9nUeoLMHib-q3G5g&s' },
+    { nome: 'suporte p/kit cortina imbuia - prorocha', codigo: '26597', img: 'https://images.tcdn.com.br/img/img_prod/850333/kit_suporte_para_varao_de_cortina_28mm_imbuia_2361_1_2491046934ef651de8bc5914fd475b5f.jpg' },
+    { nome: 'suporte p/kit cortina branco - prorocha', codigo: '26596', img: 'https://fken.vtexassets.com/arquivos/ids/253301-800-800?v=638470025625430000&width=800&height=800&aspect=true' },
+    { nome: 'protetor auditivo c/cordão - vilmar', codigo: '25085', img: 'https://cesarnatal.com.br/wp-content/uploads/2021/01/72542-0.jpg' },
+    { nome: 'correntes para cadeado zincada 2/0 40cm', codigo: '11131', img: 'https://compensamateriais.fbitsstatic.net/img/p/corrente-para-cadeado-soldada-40cm-max-ferramentas-71063/257582.jpg?w=640&h=640&v=no-change&qs=ignore' },
+    { nome: 'esticado para cabo de aço 5/16 - carbostorm', codigo: '25226', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFD-9M__dcYWr-_epNMJ-P64sRBagedrx-ag&s' },
+    { nome: 'clips p/cabo aço 1/4 c/2 martelao', codigo: '11874', img: 'https://cdn.distribuidoralopes.com.br/produtos/26426/26426.jpg' },
+    { 
+        nome: 'suporte para ventilador de teto 133 prorocha', 
+        codigo: '02249', 
+        img: 'https://cdn.awsli.com.br/800x800/2560/2560520/produto/210434921/60-fazlhk.jpg',
+        infos: ''
+    },
+    { nome: '', codigo: '', img: '' },
 ]
 
 export default Produtos;
