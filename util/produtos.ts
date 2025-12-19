@@ -4,14 +4,14 @@ const Produtos = [
         codigo: "11302",
         img: "https://www.viapol.com.br/media/700836/viaplus-6000.png",
         infos: "Viaplus 7000 é uma argamassa mais flexivel, que impermeabiliza áreas umidas e molhadas, criando uma barreira contra a água e umidade, protegendo a estrutura contra infiltrações, mesmo sob pressão hidrostática;",
-        price: "0"
+        price: "334,52"
     },
     {
         nome: "Viaplus 5000 18kg",
         codigo: "11114",
         img: "https://images.tcdn.com.br/img/img_prod/823039/kit_2_impermeabilizante_viaplus_5000_caixa_18kg_viapol_1879_2_1ba416aecd27fe1caad4c939dcb2b839.jpeg",
         infos: "Viaplus 5000 é uma argamassa mais rigida em comparação a 7000, que impermeabiliza áreas umidas e molhadas, criando uma barreira contra a água e umidade, protegendo a estrutura contra infiltrações, mesmo sob pressão hidrostática;",
-        price: '0'
+        price: '275,50'
     },
     {
         nome: "Argamassa ac-1 interno cinza construcola",
@@ -39,35 +39,35 @@ const Produtos = [
         codigo: "24084",
         img: "https://images.tcdn.com.br/img/img_prod/1392010/zarcao_sintetico_laranja_900ml_extracrill_3723_1_2222a8c45ef5f9725024d8962d15fcb2.jpg",
         infos: "A tinta zarcão, base solvente (aguarrás ou thinner), serve para proteger superfícies metálicas ferrosas contra a ferrugem (corrosão) formando uma barreira protetora com cor alaranjada, e atua como um fundo preparador para a tinta de acabamento, garantindo maior aderência, durabilidade e uniformidade da pintura final em portões.",
-        price: '0'
+        price: '26,99'
     },
     {
         nome: "vedalage preto gl 3,6l - viapol",
         codigo: "25052",
         img: "https://a-static.mlcdn.com.br/1500x1500/viapol-vedalage-preto-gl-36-30001350/comprespcom/30001350/fe914ddef88616816ae654d277174618.jpeg",
         infos: "O Vedalage Viapol é uma manta líquida impermeabilizante; usada para criar uma camada protetora elástica e flexível contra umidade em superfícies; oferecendo alta durabilidade, facilidade de aplicação e, no caso da versão branca, conforto térmico por refletir o sol, sem a necessidade de proteção mecânica em muitas aplicações.",
-        price: '0'
+        price: '72,99'
     },
     {
         nome: "primer viabit base solvente 900ml viapol",
         codigo: "10186",
         img: "https://www.wermar.com.br/app/assets/images/dinamica/produto/2960/cor_0/77535-primer--viabit--900ml--viapol-100625-c05123.jpg",
         infos: "O Primer Viabit base solvente (aguarrás ou thinner) é uma tinta asfáltica impermeável e primer (base) para diversas aplicações, criando uma camada de alta aderência em superfícies como concreto, alvenaria, metal e PVC, sendo essencial para a colagem de mantas asfálticas, proteção contra umidade em fundações e muros de arrimo, e até proteção anticorrosiva em madeiras e metais não expostos, funcionando como uma base de conexão para sistemas de impermeabilização.",
-        price: '0'
+        price: '41,50'
     },
     {
         nome: "ecoprimer galao 3.6lt viapol",
         codigo: "10194",
         img: "https://http2.mlstatic.com/D_644184-MLB91339705756_092025-O.jpg",
         infos: "O Ecoprimer da Viapol serve como um primer (produto que prepara a pele (ou outras superfícies) para receber outro acabamento, funcionando como uma base ou selante); à base de água, prepara superfícies (concreto, argamassa, alvenaria, fibra de vidro) antes da aplicação de mantas e fitas asfálticas, garantindo uma colagem forte, uniforme e duradoura, sendo um produto ecológico, de baixo odor e pronto para uso.",
-        price: '0'
+        price: '55,50'
     },
     {
         nome: "contra umidade galao 3.6lt viapol",
         codigo: "08928",
         img: "https://casamimosa1.vtexassets.com/arquivos/ids/185799-800-800?v=638011484503430000&width=800&height=800&aspect=true",
         infos: "O Contra Umidade da Viapol é um aditivo impermeabilizante hidrófugo que, misturado em argamassas e concretos, bloqueia os poros (capilares) da estrutura, impedindo a penetração e o desenvolvimento da umidade, sendo ideal para proteger áreas sujeitas a infiltrações como subsolos, alicerces, baldrames, muros de contenção, piscinas enterradas, poços de elevadores e caixas dágua enterradas. Ele confere impermeabilidade duradoura, melhora a trabalhabilidade e protege a obra contra a umidade ascendente e filtrações. COMO FUNCIONA? Adição: É misturado na água de amassamento do concreto ou argamassa. Reação: Reage com o cimento, formando uma barreira dentro dos capilares da estrutura.Bloqueio: Interrompe a passagem da água, tornando a argamassa impermeável.",
-        price: '0'
+        price: '36,50'
     },
 
     {
@@ -75,69 +75,70 @@ const Produtos = [
         codigo: "08926",
         img: "https://http2.mlstatic.com/D_981421-MLB82610851521_022025-O.jpg",
         infos: "O Viafix da Viapol serve como um promotor de aderência, resistência e plasticidade para argamassas e chapiscos, sendo um adesivo à base de PVA que melhora o desempenho em diversas aplicações na construção civil, como rebocos, contrapisos, assentamento de pisos e azulejos, e chapisco sobre superfícies lisas como isopor, além de conferir propriedades impermeabilizantes à argamassa.",
-        price: '0'
+        price: '58,50'
     },
     {
         nome: "barramento trifasico 80a 440v 16p din steck",
         codigo: "08617",
         img: "https://http2.mlstatic.com/D_NQ_NP_644567-MLB44795487090_022021-O.webp",
         infos: "A barra trifásica (ou barramento trifásico) é um componente utilizado em quadros de distribuição de energia para conduzir e distribuir, de forma eficiente e segura, a corrente elétrica em sistemas que operam com três fases. Sua função principal é: 1 - Interligar disjuntores; 2 - Balancear a carga; 3 - Otimizar a instalação; 4 - Fornecer maior potência.",
-        price: '0'
+        price: '111,50'
     },
     {
         nome: "barramento monofase 12 disjuntor tigre",
         codigo: "00202",
         img: "https://cdn.awsli.com.br/1659/1659184/produto/118684901/8f86094246.jpg",
         infos: "A 'barra monofásica' é um termo utilizado no contexto de instalações elétricas, e não em treinos de academia. A sua função é distribuir a corrente elétrica de uma única fase para vários pontos (como disjuntores) dentro de um quadro de distribuição, proporcionando uma instalação mais segura e organizada. Sua função principal é: 1 - Interligar disjuntores; 2 - Balancear a carga; 3 - Otimizar a instalação; 4 - Fornecer maior potência.",
-        price: '0'
+        price: '61,50'
     },
     {
         nome: "massa zarcao 200g iguaco",
         codigo: "07862",
         img: "https://trenaferragens.com.br/wp-content/uploads/2021/05/02076.jpg",
         infos: "A massa zarcão serve como fundo preparador anticorrosivo para metais, protegendo-os contra a ferrugem e oxidação e aumentando a aderência da tinta de acabamento. Usada em superfícies como portões, grades, esquadrias e estruturas metálicas para prolongar sua durabilidade e manter um bom visual. Além disso, existe uma 'massa zarcão' específica para vedação de encanamentos, usada nas roscas para evitar vazamentos",
-        price: '0'
+        price: '10,99'
     },
     {
         nome: "resina base agua ceramica 3.6gl - extracrill",
         codigo: "24085",
         img: "https://cdn.grupolle.com.br/produtos/33445/33445.jpg",
         infos: "A resina à base de água da Extracrill, serve para impermeabilizar, proteger e embelezar superfícies porosas, criando uma camada resistente à água, sujeira, mofo e intempéries, ideal para telhas, tijolos, pedras e concreto, com a vantagem do baixo odor e fácil limpeza. Ela reduz a absorção de água, combate fungos e realça a cor ou deixa a superfície com aspecto brilhante, sendo ótima para áreas internas e externas.",
-        price: '0'
+        price: '83,50'
     },
     {
         nome: "bezolim desincrustante acido l-440",
         codigo: "25808",
         img: "https://cdn.awsli.com.br/800x800/338/338110/produto/2304666692c9e1844ba.jpg",
         infos: "O Bezolim desincrustante (especificamente o modelo L-440) é um detergente químico ácido concentrado, indicado para a limpeza de serpentinas e aletas de ar-condicionado, tanto domésticos quanto industriais. Sua função é remover sujeiras incrustadas, graxas, óleos e eflorescências de superfícies de alumínio.",
-        price: '0'
+        price: '26,99'
     },
     {
         nome: "vedacit massa asfaltica impermeabilizante galao 3.9kg vedacit",
         codigo: "03383",
         img: "https://normatel.fbitsstatic.net/img/p/frio-asfalto-galao-3-9kg-preto-vedacit-72609/259152.jpg?w=770&h=770&v=no-value",
         infos: "A Vedacit Massa Asfáltica serve para impermeabilizar e proteger diversas superfícies, como lajes de cobertura, terraços, áreas frias (banheiros, cozinhas), baldrames, e fundações, formando uma camada contínua, flexível e resistente contra umidade e infiltrações, com aplicação a frio e sem emendas, ideal para reparos e proteção de grandes áreas.",
-        price: '0'
+        price: '53,99'
     },
     {
         nome: "bianco 3.6gl vedacit",
         codigo: "06997",
         img: "https://joli.vtexassets.com/arquivos/ids/607472-800-800?v=638025041640600000&width=800&height=800&aspect=true",
         infos: "A Bianco 3,6GL Vedacit serve para melhorar a aderência e resistência de chapiscos e argamassas; é uma resina sintética de alto desempenho usada como aditivo para chapiscos e argamassas, melhorando drasticamente a aderência, plasticidade, coesão e resistência, evitando fissuras e aumentando a durabilidade em áreas internas e externas, inclusive em substratos difíceis como EPS (Isopor), sendo essencial para um bom começo de revestimentos em construções e reformas. • COMO USAR: (dilui em água e adiciona à mistura de cimento e areia, criando uma ponte de aderência para chapiscos e argamassas, garantindo mais liga e resistência).",
-        price: '0'
+        price: '103,99'
     },
     {
         nome: "sika top 100 cx 18kg sika",
         codigo: "01949",
         img: "https://cdn.awsli.com.br/2261/2261856/produto/215569451/chatgpt-image-11-de-ago--de-2025--12_01_51-m3ut3ncglt.png",
         infos: "O SikaTop®-100 serve para impermeabilizar e proteger superfícies de concreto, argamassa e alvenaria contra a umidade e infiltrações; sendo ideal para caixas dágua, piscinas, banheiros, cozinhas, porões, cisternas, e para evitar umidade em rodapés e paredes. É um revestimento bicomponente (cimento + resina acrílica) de fácil aplicação, com alta aderência e que forma uma barreira semi-flexível contra a água, podendo também ser usado para proteger pedras naturais claras.",
-        price: '0'
+        price: '75,99'
     },
     {
         nome: "sika 1 saco sika",
         codigo: "01946",
         img: "https://images.tcdn.com.br/img/img_prod/1250632/sika_1_saco_1_litro_579_1_e1e2e2e753be553f999da427dd71bf51.jpeg",
-        infos: `O Sika-1 serve para impermeabilizar massas e concretos; é um aditivo impermeabilizante para argamassa e concreto, serve para bloquear a rede capilar, impedindo a penetração de água e umidade em estruturas como fundações, subsolos, paredes, pisos, piscinas e caixas dágua, garantindo durabilidade e evitando mofo e infiltrações. • COMO USAR: (Coloque-o no cimento e misture) • Ele reage com o cimento para criar substâncias minerais que vedam a estrutura, sendo ideal para rebocos internos e externos, contrapisos e assentamento de blocos`
+        infos: `O Sika-1 serve para impermeabilizar massas e concretos; é um aditivo impermeabilizante para argamassa e concreto, serve para bloquear a rede capilar, impedindo a penetração de água e umidade em estruturas como fundações, subsolos, paredes, pisos, piscinas e caixas dágua, garantindo durabilidade e evitando mofo e infiltrações. • COMO USAR: (Coloque-o no cimento e misture) • Ele reage com o cimento para criar substâncias minerais que vedam a estrutura, sendo ideal para rebocos internos e externos, contrapisos e assentamento de blocos`,
+        price: '14,99'
     },
     {
         nome: "catalisador para tinta epoxi base solvente 900ml coral",
