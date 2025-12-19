@@ -2,132 +2,141 @@ const Produtos = [
 
     /* NOVOS PRODUTOS */
 
-    { 
-        nome: "VIAPLUS 7000", 
-        codigo: "11302", 
+    {
+        nome: "VIAPLUS 7000",
+        codigo: "11302",
         img: "https://www.viapol.com.br/media/700836/viaplus-6000.png",
         infos: 'Viaplus 7000 é uma argamassa mais flexivel, que impermeabiliza áreas umidas e molhadas, criando uma barreira contra a água e umidade, protegendo a estrutura contra infiltrações, mesmo sob pressão hidrostática;'
     },
-    { 
-        nome: "Viaplus 5000 18kg", 
-        codigo: "11114", 
+    {
+        nome: "Viaplus 5000 18kg",
+        codigo: "11114",
         img: "https://images.tcdn.com.br/img/img_prod/823039/kit_2_impermeabilizante_viaplus_5000_caixa_18kg_viapol_1879_2_1ba416aecd27fe1caad4c939dcb2b839.jpeg",
         infos: "Viaplus 5000 é uma argamassa mais rigida em comparação a 7000, que impermeabiliza áreas umidas e molhadas, criando uma barreira contra a água e umidade, protegendo a estrutura contra infiltrações, mesmo sob pressão hidrostática;"
-     },
-    { 
-        nome: "Argamassa ac-1 interno cinza construcola", 
-        codigo: "00656", 
-        img: "https://cdn.awsli.com.br/2509/2509566/produto/218677285/shoppidasng-d220ig8468.jpg" ,
+    },
+    {
+        nome: "Argamassa ac-1 interno cinza construcola",
+        codigo: "00656",
+        price: 14.00,
+        img: "https://cdn.awsli.com.br/2509/2509566/produto/218677285/shoppidasng-d220ig8468.jpg",
         infos: 'Argamassa ac-1 é uma argamassa colante cimenticia para uso interno; tem um tempo de secagem mais longo, permitindo assim ajustes;'
     },
-    { 
-        nome: "Argamassa ac-1 quartzolit cinza", 
-        codigo: "03399", 
+    {
+        nome: "Argamassa ac-1 quartzolit cinza",
+        codigo: "03399",
+        price: 20.00,
         img: "https://www.quartzolit.weber/files/br/styles/768x768_resize/public/pictures/2023-09/AF-3D-WEBER-CIMENTCOLA-INTERNO-20KG-PLASTICO-SIMP_9D0F8F89853140708B80F254E992C152.jpg.webp?itok=k7a0r6E-",
         infos: 'Argamassa ac-1 é uma argamassa colante cimenticia para uso interno; tem um tempo de secagem mais longo, permitindo assim ajustes;'
     },
-    { 
-        nome: "Argamassa ac-2 6x1 cinza 20kg construcola", 
+    {
+        nome: "Argamassa ac-2 6x1 cinza 20kg construcola",
         codigo: "00646",
+        price: 30.00,
         img: "https://images.tcdn.com.br/img/img_prod/1239768/argamassa_ac2_6x1_multifuncional_cinza_20kg_construcola_5437_1_ec8119ab9a1f8626a69116881997d860.jpeg",
         infos: 'Argamassa ac-2 é uma argamassa colante cimenticia para uso interno ou externo; oferece maior aderência e flexibilidade em comparação com a AC-1'
     },
-    { 
-        nome: "tinta zarcao laranja base solvente 900ml extracril", 
-        codigo: "24084", 
+    {
+        nome: "tinta zarcao laranja base solvente 900ml extracril",
+        codigo: "24084",
         img: "https://images.tcdn.com.br/img/img_prod/1392010/zarcao_sintetico_laranja_900ml_extracrill_3723_1_2222a8c45ef5f9725024d8962d15fcb2.jpg",
         infos: 'A tinta zarcão, base solvente (aguarrás ou thinner), serve para proteger superfícies metálicas ferrosas contra a ferrugem (corrosão) formando uma barreira protetora com cor alaranjada, e atua como um fundo preparador para a tinta de acabamento, garantindo maior aderência, durabilidade e uniformidade da pintura final em portões.'
     },
-    { 
-        nome: "vedalage preto gl 3,6l - viapol", 
-        codigo: "25052", 
+    {
+        nome: "vedalage preto gl 3,6l - viapol",
+        codigo: "25052",
         img: "https://a-static.mlcdn.com.br/1500x1500/viapol-vedalage-preto-gl-36-30001350/comprespcom/30001350/fe914ddef88616816ae654d277174618.jpeg",
         infos: 'O Vedalage Viapol é uma manta líquida impermeabilizante; usada para criar uma camada protetora elástica e flexível contra umidade em superfícies; oferecendo alta durabilidade, facilidade de aplicação e, no caso da versão branca, conforto térmico por refletir o sol, sem a necessidade de proteção mecânica em muitas aplicações.'
     },
-    { 
-        nome: "primer viabit base solvente 900ml viapol", 
-        codigo: "10186", 
+    {
+        nome: "primer viabit base solvente 900ml viapol",
+        codigo: "10186",
         img: "https://www.wermar.com.br/app/assets/images/dinamica/produto/2960/cor_0/77535-primer--viabit--900ml--viapol-100625-c05123.jpg",
         infos: 'O Primer Viabit base solvente (aguarrás ou thinner) é uma tinta asfáltica impermeável e primer (base) para diversas aplicações, criando uma camada de alta aderência em superfícies como concreto, alvenaria, metal e PVC, sendo essencial para a colagem de mantas asfálticas, proteção contra umidade em fundações e muros de arrimo, e até proteção anticorrosiva em madeiras e metais não expostos, funcionando como uma base de conexão para sistemas de impermeabilização. '
     },
-    { 
-        nome: "ecoprimer galao 3.6lt viapol", 
-        codigo: "10194", 
+    {
+        nome: "ecoprimer galao 3.6lt viapol",
+        codigo: "10194",
         img: "https://http2.mlstatic.com/D_644184-MLB91339705756_092025-O.jpg",
         infos: 'O Ecoprimer da Viapol serve como um primer (produto que prepara a pele (ou outras superfícies) para receber outro acabamento, funcionando como uma base ou selante); à base de água, prepara superfícies (concreto, argamassa, alvenaria, fibra de vidro) antes da aplicação de mantas e fitas asfálticas, garantindo uma colagem forte, uniforme e duradoura, sendo um produto ecológico, de baixo odor e pronto para uso.'
-     },
-    { 
-        nome: "contra umidade galao 3.6lt viapol", 
-        codigo: "08928", 
+    },
+    {
+        nome: "contra umidade galao 3.6lt viapol",
+        codigo: "08928",
         img: "https://casamimosa1.vtexassets.com/arquivos/ids/185799-800-800?v=638011484503430000&width=800&height=800&aspect=true",
         infos: 'O Contra Umidade da Viapol é um aditivo impermeabilizante hidrófugo que, misturado em argamassas e concretos, bloqueia os poros (capilares) da estrutura, impedindo a penetração e o desenvolvimento da umidade, sendo ideal para proteger áreas sujeitas a infiltrações como subsolos, alicerces, baldrames, muros de contenção, piscinas enterradas, poços de elevadores e caixas dágua enterradas. Ele confere impermeabilidade duradoura, melhora a trabalhabilidade e protege a obra contra a umidade ascendente e filtrações. COMO FUNCIONA? Adição: É misturado na água de amassamento do concreto ou argamassa. Reação: Reage com o cimento, formando uma barreira dentro dos capilares da estrutura.Bloqueio: Interrompe a passagem da água, tornando a argamassa impermeável. '
     },
-    
-    { 
-        nome: "viafix galao gl 3.6kg - viapol", 
-        codigo: "08926", 
-        img: "https://http2.mlstatic.com/D_981421-MLB82610851521_022025-O.jpg", 
-        infos: 'O Viafix da Viapol serve como um promotor de aderência, resistência e plasticidade para argamassas e chapiscos, sendo um adesivo à base de PVA que melhora o desempenho em diversas aplicações na construção civil, como rebocos, contrapisos, assentamento de pisos e azulejos, e chapisco sobre superfícies lisas como isopor, além de conferir propriedades impermeabilizantes à argamassa.' 
+
+    {
+        nome: "viafix galao gl 3.6kg - viapol",
+        codigo: "08926",
+        img: "https://http2.mlstatic.com/D_981421-MLB82610851521_022025-O.jpg",
+        infos: 'O Viafix da Viapol serve como um promotor de aderência, resistência e plasticidade para argamassas e chapiscos, sendo um adesivo à base de PVA que melhora o desempenho em diversas aplicações na construção civil, como rebocos, contrapisos, assentamento de pisos e azulejos, e chapisco sobre superfícies lisas como isopor, além de conferir propriedades impermeabilizantes à argamassa.'
     },
-    { 
-        nome: "barramento trifasico 80a 440v 16p din steck", 
-        codigo: "08617", 
+    {
+        nome: "barramento trifasico 80a 440v 16p din steck",
+        codigo: "08617",
         img: "https://http2.mlstatic.com/D_NQ_NP_644567-MLB44795487090_022021-O.webp",
         infos: 'A barra trifásica (ou barramento trifásico) é um componente utilizado em quadros de distribuição de energia para conduzir e distribuir, de forma eficiente e segura, a corrente elétrica em sistemas que operam com três fases. Sua função principal é: 1 - Interligar disjuntores; 2 - Balancear a carga; 3 - Otimizar a instalação; 4 - Fornecer maior potência.'
     },
-    { 
-        nome: "barramento monofase 12 disjuntor tigre", 
-        codigo: "00202", 
+    {
+        nome: "barramento monofase 12 disjuntor tigre",
+        codigo: "00202",
         img: "https://cdn.awsli.com.br/1659/1659184/produto/118684901/8f86094246.jpg",
-        infos: 'A "barra monofásica" é um termo utilizado no contexto de instalações elétricas, e não em treinos de academia. A sua função é distribuir a corrente elétrica de uma única fase para vários pontos (como disjuntores) dentro de um quadro de distribuição, proporcionando uma instalação mais segura e organizada. Sua função principal é: 1 - Interligar disjuntores; 2 - Balancear a carga; 3 - Otimizar a instalação; 4 - Fornecer maior potência.' 
+        infos: 'A "barra monofásica" é um termo utilizado no contexto de instalações elétricas, e não em treinos de academia. A sua função é distribuir a corrente elétrica de uma única fase para vários pontos (como disjuntores) dentro de um quadro de distribuição, proporcionando uma instalação mais segura e organizada. Sua função principal é: 1 - Interligar disjuntores; 2 - Balancear a carga; 3 - Otimizar a instalação; 4 - Fornecer maior potência.'
     },
-    { 
-        nome: "massa zarcao 200g iguaco", 
-        codigo: "07862", 
+    {
+        nome: "massa zarcao 200g iguaco",
+        codigo: "07862",
         img: "https://trenaferragens.com.br/wp-content/uploads/2021/05/02076.jpg",
         infos: 'A massa zarcão serve como fundo preparador anticorrosivo para metais, protegendo-os contra a ferrugem e oxidação e aumentando a aderência da tinta de acabamento. Usada em superfícies como portões, grades, esquadrias e estruturas metálicas para prolongar sua durabilidade e manter um bom visual. Além disso, existe uma "massa zarcão" específica para vedação de encanamentos, usada nas roscas para evitar vazamentos'
     },
-    { 
+    {
         nome: "resina base agua ceramica 3.6gl - extracrill",
         codigo: "24085",
         img: "https://cdn.grupolle.com.br/produtos/33445/33445.jpg",
         infos: 'A resina à base de água da Extracrill, serve para impermeabilizar, proteger e embelezar superfícies porosas, criando uma camada resistente à água, sujeira, mofo e intempéries, ideal para telhas, tijolos, pedras e concreto, com a vantagem do baixo odor e fácil limpeza. Ela reduz a absorção de água, combate fungos e realça a cor ou deixa a superfície com aspecto brilhante, sendo ótima para áreas internas e externas.'
     },
-    { 
-        nome: "bezolim desincrustante acido l-440", 
-        codigo: "25808", 
+    {
+        nome: "bezolim desincrustante acido l-440",
+        codigo: "25808",
         img: "https://cdn.awsli.com.br/800x800/338/338110/produto/2304666692c9e1844ba.jpg",
         infos: 'O Bezolim desincrustante (especificamente o modelo L-440) é um detergente químico ácido concentrado, indicado para a limpeza de serpentinas e aletas de ar-condicionado, tanto domésticos quanto industriais. Sua função é remover sujeiras incrustadas, graxas, óleos e eflorescências de superfícies de alumínio.'
     },
-    { 
-        nome: "vedacit massa asfaltica impermeabilizante galao 3.9kg vedacit", 
-        codigo: "03383", 
+    {
+        nome: "vedacit massa asfaltica impermeabilizante galao 3.9kg vedacit",
+        codigo: "03383",
         img: "https://normatel.fbitsstatic.net/img/p/frio-asfalto-galao-3-9kg-preto-vedacit-72609/259152.jpg?w=770&h=770&v=no-value",
         infos: 'A Vedacit Massa Asfáltica serve para impermeabilizar e proteger diversas superfícies, como lajes de cobertura, terraços, áreas frias (banheiros, cozinhas), baldrames, e fundações, formando uma camada contínua, flexível e resistente contra umidade e infiltrações, com aplicação a frio e sem emendas, ideal para reparos e proteção de grandes áreas.'
     },
-    { 
-        nome: "bianco 3.6gl vedacit", 
-        codigo: "06997", 
+    {
+        nome: "bianco 3.6gl vedacit",
+        codigo: "06997",
         img: "https://joli.vtexassets.com/arquivos/ids/607472-800-800?v=638025041640600000&width=800&height=800&aspect=true",
         infos: 'A Bianco 3,6GL Vedacit serve para melhorar a aderência e resistência de chapiscos e argamassas; é uma resina sintética de alto desempenho usada como aditivo para chapiscos e argamassas, melhorando drasticamente a aderência, plasticidade, coesão e resistência, evitando fissuras e aumentando a durabilidade em áreas internas e externas, inclusive em substratos difíceis como EPS (Isopor), sendo essencial para um bom começo de revestimentos em construções e reformas. • COMO USAR: (dilui em água e adiciona à mistura de cimento e areia, criando uma ponte de aderência para chapiscos e argamassas, garantindo mais liga e resistência).'
     },
-    { 
-        nome: "sika top 100 cx 18kg sika", 
-        codigo: "01949", 
+    {
+        nome: "sika top 100 cx 18kg sika",
+        codigo: "01949",
         img: "https://cdn.awsli.com.br/2261/2261856/produto/215569451/chatgpt-image-11-de-ago--de-2025--12_01_51-m3ut3ncglt.png",
         infos: 'O SikaTop®-100 serve para impermeabilizar e proteger superfícies de concreto, argamassa e alvenaria contra a umidade e infiltrações; sendo ideal para caixas dágua, piscinas, banheiros, cozinhas, porões, cisternas, e para evitar umidade em rodapés e paredes. É um revestimento bicomponente (cimento + resina acrílica) de fácil aplicação, com alta aderência e que forma uma barreira semi-flexível contra a água, podendo também ser usado para proteger pedras naturais claras.'
     },
-    { 
-        nome: "sika 1 saco sika", 
-        codigo: "01946", 
+    {
+        nome: "sika 1 saco sika",
+        codigo: "01946",
         img: "https://images.tcdn.com.br/img/img_prod/1250632/sika_1_saco_1_litro_579_1_e1e2e2e753be553f999da427dd71bf51.jpeg",
         infos: `O Sika-1 serve para impermeabilizar massas e concretos; é um aditivo impermeabilizante para argamassa e concreto, serve para bloquear a rede capilar, impedindo a penetração de água e umidade em estruturas como fundações, subsolos, paredes, pisos, piscinas e caixas dágua, garantindo durabilidade e evitando mofo e infiltrações. • COMO USAR: (Coloque-o no cimento e misture) • Ele reage com o cimento para criar substâncias minerais que vedam a estrutura, sendo ideal para rebocos internos e externos, contrapisos e assentamento de blocos`
     },
-    { 
-        nome: "catalisador para tinta epoxi base solvente 900ml coral", 
-        codigo: "24226", 
+    {
+        nome: "catalisador para tinta epoxi base solvente 900ml coral",
+        codigo: "24226",
         img: "https://cdn.awsli.com.br/2500x2500/1593/1593344/produto/94490300/20240912104234321720ea8d6747-a4snkckh9n.jpg",
         infos: 'O catalisador para tinta epóxi serve para endurecer a tinta; por meio de reação quimica ele transforma a tinta líquida em um revestimento sólido, duro e durável, acelerando a cura e garantindo propriedades como alta resistência a impactos, abrasão e produtos químicos, sendo essencial para o desempenho máximo da tinta em pisos e superfícies de alto tráfego. Sem ele, a tinta epóxi não cura corretamente, resultando em um acabamento fraco e ineficaz, pois ele atua como um endurecedor. • COMO USAR: (misturar a tinta (componente A) e o catalisador (componente B) nas proporções corretas (geralmente 3 partes de A para 1 de B), mexer bem por alguns minutos, aguardar um tempo de "pot life" (10-20 min), e só então adicionar o diluente e aplicar).'
+    },
+    { 
+        nome: "valvula alternadora pressao duchao 330601 blukit", 
+        codigo: "23600", 
+        img: "https://cdn.awsli.com.br/600x450/718/718365/produto/206190459105bca95f9.jpg",
+        infos: 'Serve para melhorar a pressão da água nas torneiras e chuveiros; transfere automaticamente a pressão da rua para a rede da casa quando ela é mais forte que a da caixa dágua, e usando a água da caixa quando a rede pública falha, garantindo um fluxo contínuo e mais confortável, sem usar energia elétrica, apenas a pressão da própria água.'
     },
     { nome: "varao cortina", codigo: "12161", img: "https://m.media-amazon.com/images/I/61FPke5Jq8L._AC_SX679_.jpg" },
     { nome: "cirandao cafe 1.20mt sao jorge", codigo: "05512", img: "https://lh6.googleusercontent.com/proxy/n4ilA7AcUjbs2ajXToB6YOw8biSBVbgImb7-lPfRlwNFcu1cVbVcT6pccrkQwfPNo8QARvn2ktU_XTo_LqjuCtXlYMTZIP3J0log" },
@@ -164,7 +173,6 @@ const Produtos = [
     { nome: "fixador cal 150 ml pintafix", codigo: "25232", img: "https://rzrezzadori.com.br/img/site/1401/b/9526209.jpg" },
     { nome: "ralador 4 faces sorts 480 ercaplast", codigo: "21662", img: "https://www.moinhoatacadista.com.br/image/cache/data/Produtos/RA/RALADOR-DE-PLASTICO-4-FACES-480-SORT-ERCAPLAST-M-V-COR-NAO-DEFINIDA-C57276CF-1-700x700.jpg.webp" },
     { nome: "pressurizador pl9 127v lorenzetti", codigo: "16183", img: "https://www.lorenzetti.com.br/images/default-source/produtos-png/pressurizadores/pl-9.png" },
-    { nome: "valvula alternadora pressao duchao 330601 blukit", codigo: "23600", img: "https://cdn.awsli.com.br/600x450/718/718365/produto/206190459105bca95f9.jpg" },
     { nome: "suporte para kit cortina branco prorocha", codigo: "26596", img: "https://images.tcdn.com.br/img/img_prod/850333/90_kit_2_suportes_para_varao_de_cortina_duplo_branco_28_19mm_2859_1_fb2b6b94712012c6e66f35efc6cd6f89.jpg" },
     { nome: "cabideiro duplo nogueira com 3 ganchos prat", codigo: "25980", img: "https://gerbran.cdn.magazord.com.br/img/2025/03/produto/10493/30337.png?ims=600x600" },
     { nome: "aquecedor a gas de rua lz750bp 1 banheiro gn lorenzetti", codigo: "16184", img: "https://a-static.mlcdn.com.br/1500x1500/aquecedor-gas-lz-750-gn-gas-natural-lorenzetti/mbkstore/15601568399/ae61646f6622e2b98879ab31a4f27dfd.jpeg" },
@@ -466,9 +474,9 @@ const Produtos = [
     { nome: 'correntes para cadeado zincada 2/0 40cm', codigo: '11131', img: 'https://compensamateriais.fbitsstatic.net/img/p/corrente-para-cadeado-soldada-40cm-max-ferramentas-71063/257582.jpg?w=640&h=640&v=no-change&qs=ignore' },
     { nome: 'esticado para cabo de aço 5/16 - carbostorm', codigo: '25226', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFD-9M__dcYWr-_epNMJ-P64sRBagedrx-ag&s' },
     { nome: 'clips p/cabo aço 1/4 c/2 martelao', codigo: '11874', img: 'https://cdn.distribuidoralopes.com.br/produtos/26426/26426.jpg' },
-    { 
-        nome: 'suporte para ventilador de teto 133 prorocha', 
-        codigo: '02249', 
+    {
+        nome: 'suporte para ventilador de teto 133 prorocha',
+        codigo: '02249',
         img: 'https://cdn.awsli.com.br/800x800/2560/2560520/produto/210434921/60-fazlhk.jpg',
         infos: ''
     },
@@ -476,6 +484,30 @@ const Produtos = [
     { nome: 'controle para fita led colorida rgb', codigo: '27102', img: 'https://images.tcdn.com.br/img/img_prod/622407/kit_fita_led_rgb_7_8w_metro_ip20_5_metro_colorida_controle_12v_gaya_5579_2_094a3b3d0829d128e332547c78e908a2_20211214114519.jpg' },
     { nome: 'luminaria solar cob 8w branco frio rg led', codigo: '17212', img: 'https://images.tcdn.com.br/img/img_prod/1220004/luminaria_solar_led_com_sensor_8w_branco_frio_453_1_e869060a73cb99de379cd848e11ac865.jpeg' },
     { nome: 'balizador elegance 3000k avant', codigo: '25756', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ20b-4ak_KHEaMN3EDUb2BINWiM8xGtFtZNQ&s' },
+    { nome: 'passador segurança maxima mr 563', codigo: '22762', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTh9KCeg1c964g2QmCesuPp3kT2cBRr9gjZg&s' },
+    { nome: 'fechadura segurança maxima 2 pinos mr1014', codigo: '22760', img: 'https://http2.mlstatic.com/D_NQ_NP_989995-MLB51926723029_102022-O.webp' },
+    { nome: 'cadeado porta aco/chao chave tetra 17500 - do vale', codigo: '24540', img: 'https://img.irroba.com.br/filters:fill(fff):quality(80)/rabeloma/catalog/api/rabeloma_citelirr/6672d905995ca.jpg' },
+    { nome: 'pendente primastico 12 1xe27 amarelo branco - demi', codigo: '22657', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS00vMtNKfzZj-OFQBXwOov9Fb-lYC2BzE49Q&s' },
+    { nome: 'pendente prismatico 12 1xe27 fume branco', codigo: '22658', img: 'https://images.tcdn.com.br/img/img_prod/424924/luminaria_prismatica_12_pendente_branco_13_1_20191009175943.jpg' },
+    { nome: 'pendente bala branco bronzearte', codigo: '14197', img: 'https://eletrorastro.fbitsstatic.net/img/p/pendente-bala-branco-com-cobre-1-lampada-e27-reue-97283/287988.jpg?w=800&h=800&v=202502101147' },
+    { nome: 'espuma poliuretano 300ml mundial', codigo: '19906', img: 'https://hiperfer.cdn.magazord.com.br/img/2021/06/produto/9202/1591-espuma-expansiva-poliuretano-300ml-190g-mundial-prime.jpg?ims=500x500' },
+    { nome: 'espuma poliuretano 500ml mundial', codigo: '12094', img: 'https://cdn.b4c.inf.br/storage/minasferramentas/original/espuma-de-poliuretano-pro-spray-500ml-mundial-prime-mp90175277044709746625.jpg' },
+    { nome: 'espuma para vedacao de ar condicionado 3x3x190cm compel', codigo: '19471', img: 'https://www.dutramaquinas.com.br/shared/img/produto/alta/314050_espuma_para_vedacao_de_ar_condicionado_3_x_3_x_190_cm.jpg' },
+    { nome: 'espuma para vedacao de ar condicionado ref com 618', codigo: '11022', img: 'https://cdn.awsli.com.br/600x1000/2590/2590498/produto/349566685/66f1fe4190b4fca774248dbfb34a911e-s2rt8xbl0w.png' },
+    { nome: 'refil mop esfregao giratorio essencial rayco', codigo: '25842', img: 'https://telhanorte.vtexassets.com/arquivos/ids/1227275/Refil-P--Mop-Giratorio-Rayco-2350483.jpg?v=637871984738370000' },
+    { nome: 'desentupidor maunal 5mt - bestfer', codigo: '23263', img: 'https://cdn.awsli.com.br/300x300/579/579100/produto/255443147/bfh2301-01-na49bmtxf5.jpg' },
+    { nome: 'desentupidor de pia diabo verde 300gnob', codigo: '05160', img: 'https://cdn.awsli.com.br/600x450/1795/1795392/produto/331355135/365f960480dc509af9c0630a9f1d85a3-0udikzl0x2.jpg' },
+    { nome: 'dispenser clean papel higienico cai cai velox branco - premisse', codigo: '16563', img: 'https://premisse.com.br/wp-content/uploads/2021/01/Dispenser-INVOQ-white.png' },
+    /* CALHA */
+    { nome: '', codigo: '', img: '' },
+    { nome: '', codigo: '', img: '' },
+    { nome: '', codigo: '', img: '' },
+    { nome: '', codigo: '', img: '' },
+    { nome: '', codigo: '', img: '' },
+    { nome: '', codigo: '', img: '' },
+    { nome: '', codigo: '', img: '' },
+    { nome: '', codigo: '', img: '' },
+    { nome: '', codigo: '', img: '' },
     { nome: '', codigo: '', img: '' },
 ]
 

@@ -6,52 +6,64 @@ type Produto = {
     nome: string;
     codigo: string;
     img: string;
-    preco?: number;
     desc: string;
     categoria: string;
+    price: number;
 };
 
 const NavBar = () => {
-    const [busca, setBusca] = useState<string>('');
+    const [busca, setBusca] = useState('');
     const [resultados, setResultados] = useState<Produto[]>([]);
-    const [codigoSelecionado, setCodigoSelecionado] = useState('');
-    const [copiado, setCopiado] = useState(false);
+    const [codigoCopiado, setCodigoCopiado] = useState<string | null>(null);
+
+    const normalizarTexto = (texto: string) =>
+        texto
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '');
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const valor = e.target.value;
         setBusca(valor);
 
-        if (valor.trim() === '') {
+        if (!valor.trim()) {
             setResultados([]);
             return;
         }
 
-        const filtrados = Produtos.filter((produto) =>
-            produto.nome.toLowerCase().includes(valor.toLowerCase()) ||
-            produto.codigo.includes(valor)
-        );
-        setResultados(filtrados as Produto[]);
+        const palavrasBusca = normalizarTexto(valor).split(' ');
+
+        const filtrados = Produtos.filter((produto) => {
+            const nomeProduto = normalizarTexto(produto.nome);
+            const codigoProduto = normalizarTexto(produto.codigo);
+
+            return palavrasBusca.every((palavra) =>
+                nomeProduto
+                    .split(' ')
+                    .some((p) => p.includes(palavra)) ||
+                codigoProduto.includes(palavra)
+            );
+        });
+
+        setResultados(filtrados);
     };
 
-
-
     const copiarTexto = async (codigo: string) => {
-        try {
-            await navigator.clipboard.writeText(codigo);
-            setCopiado(true);
-            setTimeout(() => setCopiado(false), 2000);
-        } catch (err) {
-            console.error('Erro ao copiar:', err);
-        }
+        await navigator.clipboard.writeText(codigo);
+        setCodigoCopiado(codigo);
+        setTimeout(() => setCodigoCopiado(null), 2000);
     };
 
     return (
         <div className={styles.navbar}>
             <a href="/">
-                <img src="/img/martelaoLogo.png" alt="Logo do Martelão" className={styles.logo} />
+                <img
+                    src="/img/martelaoLogo.png"
+                    alt="Logo do Martelão"
+                    className={styles.logo}
+                />
             </a>
 
-            {/* Container para input + resultados */}
             <div className={styles.buscaContainer}>
                 <input
                     type="text"
@@ -63,21 +75,26 @@ const NavBar = () => {
 
                 {busca && resultados.length > 0 && (
                     <ul className={styles.resultados}>
-                        {resultados.map((prod, index) => (
-                            <div style={{ display: 'flex', alignItems: 'center' }} key={index}>
+                        {resultados.map((prod) => (
+                            <li key={prod.codigo} className={styles.item}>
                                 <div
                                     onClick={() => copiarTexto(prod.codigo)}
+                                    className={styles.codigo}
                                 >
                                     {prod.codigo}
-                                    {copiado && <span style={{ color: 'green', marginLeft: 5 }}>✔ Copiado!</span>}
+                                    {codigoCopiado === prod.codigo && (
+                                        <span style={{ color: 'green', marginLeft: 5 }}>
+                                            ✔ Copiado!
+                                        </span>
+                                    )}
                                 </div>
-                                <a href={`/produto/${prod.nome}`}>
-                                    <li key={prod.codigo}>
-                                        <img src={prod.img} alt={prod.nome} width={40} />
-                                        <div>{prod.nome}</div>
-                                    </li>
+
+                                <a href={`/produto/${encodeURIComponent(prod.nome)}`}>
+                                    <img src={prod.img} alt={prod.nome} width={40} />
+                                    <div>{prod.nome}</div>
+                                    <div>- R$ {prod.price}</div>
                                 </a>
-                            </div>
+                            </li>
                         ))}
                     </ul>
                 )}

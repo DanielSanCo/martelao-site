@@ -20,15 +20,15 @@ const PageProd = () => {
     return <div>Produto inválido ou não encontrado: {nomeProduto}</div>;
   }
 
-  const copiarTexto = async () => {
-    try {
-      await navigator.clipboard.writeText(codigoSelecionado || prodInfo.codigo);
-      setCopiado(true);
-      setTimeout(() => setCopiado(false), 2000); // remove aviso após 2s
-    } catch (err) {
-      console.error('Erro ao copiar:', err);
-    }
-  };
+    const copiarTexto = async (codigo: string) => {
+        try {
+            await navigator.clipboard.writeText(codigo);
+            setCopiado(true);
+            setTimeout(() => setCopiado(false), 2000);
+        } catch (err) {
+            console.error('Erro ao copiar:', err);
+        }
+    };
 
   return (
     <div className={styles.main}>
@@ -50,11 +50,13 @@ const PageProd = () => {
 
         <div className={styles.infoProd}>
           <div className={styles.itemNome}>{prodInfo.nome}</div>
-          <div style={{padding: '20px'}}>{prodInfo.infos}</div>
+          <div style={{ padding: '20px' }}>{prodInfo.infos}</div>
           <div className={styles.itemNome}>
-            Código:{" "}
-            <div onClick={copiarTexto} style={{ cursor: 'pointer', display: 'inline', color: 'blue' }}>
-              {codigoSelecionado || prodInfo.codigo}
+            <div
+              onClick={() => copiarTexto(prodInfo.codigo)}
+              style={{color: 'blue'}}
+            >
+              Clique para Copiar: {prodInfo.codigo}
               {copiado && <span style={{ color: 'green', marginLeft: 5 }}>✔ Copiado!</span>}
             </div>
           </div>
