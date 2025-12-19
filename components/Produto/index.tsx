@@ -4,17 +4,15 @@ import Produtos from '@/util/produtos';
 import { useRouter } from 'next/router';
 
 type Props = {
-    id: number,
     img: string,
     nome: string,
     codigo: string,
-    preco: number
+    preco: string | undefined
 }
 
-const Produto = ({ id, img, nome, codigo, preco }: Props) => {
+const Produto = ({ img, nome, codigo, preco }: Props) => {
     const router = useRouter();
     const { produto } = router.query;
-    const [codigoSelecionado, setCodigoSelecionado] = useState('');
     const [copiado, setCopiado] = useState(false);
 
     const numero = '5521969703202'; // Substitua pelo número com DDI + DDD + número
@@ -64,7 +62,7 @@ const Produto = ({ id, img, nome, codigo, preco }: Props) => {
                     </div>
                 </div>
 
-                {preco > 0 ?
+                {preco != '0' ?
                     <div className={styles.price}>R$ {preco}</div>
                     :
                     ''

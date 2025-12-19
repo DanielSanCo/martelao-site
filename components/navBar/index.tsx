@@ -8,7 +8,7 @@ type Produto = {
     img: string;
     desc: string;
     categoria: string;
-    price: number;
+    price?: string;
 };
 
 const NavBar = () => {
@@ -30,22 +30,42 @@ const NavBar = () => {
             setResultados([]);
             return;
         }
+        const normalizarTexto = (texto: string) =>
+            texto
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '');
 
         const palavrasBusca = normalizarTexto(valor).split(' ');
 
-        const filtrados = Produtos.filter((produto) => {
-            const nomeProduto = normalizarTexto(produto.nome);
-            const codigoProduto = normalizarTexto(produto.codigo);
+        const filtrados: Produto[] = (Produtos as Produto[]).filter((produto) => {
+            const buscaNormalizada = normalizarTexto(busca).trim();
+            const palavrasBusca = buscaNormalizada.split(' ').filter(Boolean);
 
-            return palavrasBusca.every((palavra) =>
-                nomeProduto
-                    .split(' ')
-                    .some((p) => p.includes(palavra)) ||
-                codigoProduto.includes(palavra)
+            const nomeNormalizado = normalizarTexto(produto.nome);
+            const palavrasProduto = nomeNormalizado.split(' ');
+
+            // 1️⃣ Match por NOME (SQL LIKE com AND)
+            const matchNome = palavrasBusca.every((palavraBusca) =>
+                palavrasProduto.some((palavraProduto) =>
+                    palavraProduto.includes(palavraBusca)
+                )
             );
+
+            // 2️⃣ Match por CÓDIGO (SOMENTE se busca for numérica)
+            const buscaEhNumero = /^\d+$/.test(buscaNormalizada);
+
+            const matchCodigo =
+                buscaEhNumero &&
+                produto.codigo &&
+                normalizarTexto(produto.codigo) === buscaNormalizada;
+
+            return matchNome || matchCodigo;
         });
 
         setResultados(filtrados);
+
+        setResultados(filtrados as Produto[]);
     };
 
     const copiarTexto = async (codigo: string) => {

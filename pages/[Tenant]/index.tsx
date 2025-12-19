@@ -10,7 +10,6 @@ const Eletrica = () => {
                 {Produtos.map((item, index) => (
                     <Produto
                         key={index}
-                        id={index}
                         img={item.img}
                         nome={item.nome}
                         codigo={item.codigo}
