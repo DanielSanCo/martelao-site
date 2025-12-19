@@ -95,26 +95,28 @@ const NavBar = () => {
 
                 {busca && resultados.length > 0 && (
                     <ul className={styles.resultados}>
-                        {resultados.map((prod) => (
-                            <li key={prod.codigo} className={styles.item}>
-                                <div
-                                    onClick={() => copiarTexto(prod.codigo)}
-                                    className={styles.codigo}
-                                >
-                                    {prod.codigo}
-                                    {codigoCopiado === prod.codigo && (
-                                        <span style={{ color: 'green', marginLeft: 5 }}>
-                                            ✔ Copiado!
-                                        </span>
-                                    )}
-                                </div>
+                        {resultados.map((prod, index) => (
+                            <div style={{ display: 'flex', alignItems: 'center' }} key={index}>
+                                <li key={prod.codigo} className={styles.item}>
+                                    <div
+                                        onClick={() => copiarTexto(prod.codigo)}
+                                        className={styles.codigo}
+                                    >
+                                        {prod.codigo}
+                                        {codigoCopiado === prod.codigo && (
+                                            <span style={{ color: 'green', marginLeft: 5 }}>
+                                                ✔ Copiado!
+                                            </span>
+                                        )}
+                                    </div>
 
-                                <a href={`/produto/${encodeURIComponent(prod.nome)}`}>
-                                    <img src={prod.img} alt={prod.nome} width={40} />
-                                    <div>{prod.nome}</div>
-                                    <div>- R$ {prod.price}</div>
-                                </a>
-                            </li>
+                                    <a href={`/produto/${encodeURIComponent(prod.nome)}`}>
+                                        <img src={prod.img} alt={prod.nome} width={40} />
+                                        <div>{prod.nome}</div>
+                                        <div>- R$ {prod.price}</div>
+                                    </a>
+                                </li>
+                            </div>
                         ))}
                     </ul>
                 )}
