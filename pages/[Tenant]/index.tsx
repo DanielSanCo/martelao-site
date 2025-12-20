@@ -13,7 +13,11 @@ const Eletrica = () => {
                         img={item.img}
                         nome={item.nome}
                         codigo={item.codigo}
-                        preco={item.price}
+                        preco={
+                            typeof item.price === "number"
+                                ? item.price
+                                : Number(item.price)
+                        }
                     />
                 ))}
             </div>

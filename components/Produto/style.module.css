@@ -1,7 +1,7 @@
 .produto {
     background-color: aliceblue;
     box-shadow: 1px 1px 5px rgb(80, 80, 80);
-    height: 360px;
+    min-height: 380px;
     width: 210px;
     border-radius: 10px;
     display: flex;
@@ -66,4 +66,9 @@
 }
 .infoPag {
     font-size: 10px;
+}
+.price {
+    font-size: 15px;
+    color: blue;
+    font-weight: bold;
 }
