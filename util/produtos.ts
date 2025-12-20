@@ -2155,47 +2155,384 @@ const Produtos = [
         nome: 'dispenser clean papel higienico cai cai velox branco - premisse', 
         codigo: '16563', 
         img: 'https://premisse.com.br/wp-content/uploads/2021/01/Dispenser-INVOQ-white.png' },
-    /* CALHA */
+    { 
+        nome: 'disco corte diamantado segmentado quartzolit', 
+        codigo: '20492', 
+        img: '' },
+    { 
+        nome: 'jogo de broca para ferro madeira e concreto com 16 peças quartzolit', 
+        codigo: '20494', 
+        img: '' },
+    { 
+        nome: 'jogo de chave torx t10-t30 starfer', 
+        codigo: '06083', 
+        img: '' },
+    { 
+        nome: 'chave para mandril s2 barzel', 
+        codigo: '06362', 
+        img: '' },
+    { 
+        nome: 'chave para mandril 10mm starfer', 
+        codigo: '11365', 
+        img: '' },
+    { 
+        nome: 'chave para mandril vdc 1 worker', 
+        codigo: '07591', 
+        img: '' },
+    { 
+        nome: 'estilete starret kus045-s', 
+        codigo: '20384', 
+        img: '' },
+    { 
+        nome: 'estilete 18mm starfer', 
+        codigo: '10253', 
+        img: '' },
+    { 
+        nome: 'lamina estilete jogo com 10 18x140 lotus', 
+        codigo: '24818', 
+        img: '' 
+    },
+    { 
+        nome: 'jogo chaves bits multiuso 1/4 lotus', 
+        codigo: '25886', 
+        img: '' 
+    },
+    { 
+        nome: 'jogo 6 bits + adaptador 1/4 lotus', 
+        codigo: '25883', 
+        img: '' 
+    },
+    { 
+        nome: 'jogo chave haxagonal 1.5 A 10mm alem - starfer', 
+        codigo: '27455', 
+        img: '' 
+    },
+    { 
+        nome: 'jogo de broca chata madeira com 6 peças lotus', 
+        codigo: '20493', 
+        img: '' 
+    },
+    { 
+        nome: 'jogo de chave allem 8 peças starfer', 
+        codigo: '03738', 
+        img: '' 
+    },
+    { 
+        nome: 'jogo de chave allem 10 peças starfer', 
+        codigo: '06862', 
+        img: '' 
+    },
+    { 
+        nome: 'mandril starfer 13mm 1/2 starfer', 
+        codigo: '20396', 
+        img: '' 
+    },
+    { 
+        nome: 'mandril starfer 10mm 3/8 starfer', 
+        codigo: '25504', 
+        img: '' 
+    },
+    { 
+        nome: 'disco turbo corte diamantado turbo - bom corte', 
+        codigo: '25206', 
+        img: '' 
+    },
+    { 
+        nome: 'disco corte diamantado porcelanato - bom corte', 
+        codigo: '25395', 
+        img: '' 
+    },
+    { 
+        nome: 'disco corte diamantado para porcelanato piso azulejo marmore - bom corte', 
+        codigo: '25394', 
+        img: '' 
+    },
+    { 
+        nome: 'disco de serra videa 4.1/2 60 dentes - bom corte', 
+        codigo: '24900', 
+        img: '' 
+    },
+    { 
+        nome: 'disco corte verde superior diamanfix', 
+        codigo: '04355', 
+        img: '' 
+    },
+    { 
+        nome: 'disco de corte standard liso diamanfix', 
+        codigo: '12816', 
+        img: '' 
+    },
+    { 
+        nome: 'disco turbo corte gol diamanttex', 
+        codigo: '12305', 
+        img: '' 
+    },
+    { 
+        nome: 'disco turbo diamantado para porcelanato - bosch', 
+        codigo: '18945', 
+        img: '' 
+    },
+    { 
+        nome: 'disco diamantado liso 110x1.4mm plus - lotus', 
+        codigo: '26663', 
+        img: '' 
+    },
+    { 
+        nome: 'disco serra videa 4.3/8 24 dentes - bom corte', 
+        codigo: '13609', 
+        img: '' 
+    },
+    { 
+        nome: 'serra circular starfer eco - starfer', 
+        codigo: '24149', 
+        img: '' 
+    },
+    { 
+        nome: 'disco diamantado porcelanato - lotus', 
+        codigo: '26662', 
+        img: '' 
+    },
+    { 
+        nome: 'disco turbo corte super azul diamanfix', 
+        codigo: '04348', 
+        img: '' 
+    },
+    { 
+        nome: 'disco corte diamantado segmentado - quartzolit', 
+        codigo: '21473', 
+        img: '' 
+    },
+    { 
+        nome: 'disco tungstenio para madeira - diamantex', 
+        codigo: '24371', 
+        img: '' 
+    },
+    { 
+        nome: 'disco tungstenio para madeira 110x20mm - lotus', 
+        codigo: '27060', 
+        img: '' 
+    },
+    { 
+        nome: 'disco de corte segmentado turbo - makita', 
+        codigo: '03533', 
+        img: '' 
+    },
+    { 
+        nome: 'broca para martelete 3k sds 5x110 - lotus', 
+        codigo: '22282', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19638', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19639', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '27234', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19640', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '20097', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '23204', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '09462', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '22281', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19641', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19642', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '24819', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '24820', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '24821', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '27460', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '27459', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19201', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19205', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19204', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '19206', 
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
     { 
         nome: '', 
         codigo: '', 
-        img: '' },
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+    { 
+        nome: '', 
+        codigo: '', 
+        img: '' 
+    },
+        
 ]
 
 export default Produtos;
