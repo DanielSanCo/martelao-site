@@ -61,12 +61,20 @@ const Produto = ({ img, nome, codigo, preco }: Props) => {
                         {copiado && <span style={{ color: 'green', marginLeft: 5 }}>✔ Copiado!</span>}
                     </div>
                 </div>
-                {preco != 0 ?
+                <div>
+                    <a href={`${url}`} target='_blank' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <div style={{ fontWeight: 'bold', color: 'green', fontSize: '12px' }}>
+                            Informações
+                        </div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="" style={{ height: '30px', margin: '4px' }} />
+                    </a>
+                </div>
+                {preco <= 0 ?
                     <>
                         <div style={{ padding: '5px', fontSize: '13px', fontWeight: 'bold' }}>R$ {(preco * 0.9).toFixed(2)} no crédito</div>
-                        <div style={{display: 'Flex', alignItems: 'center'}}>
+                        <div style={{ display: 'Flex', alignItems: 'center' }}>
                             <div className={styles.price} style={{ fontSize: '16px' }}>R$ {(preco * 0.8).toFixed(2)}</div>
-                            <div style={{width: '3px'}}></div>
+                            <div style={{ width: '3px' }}></div>
                             <div style={{ fontSize: '13px' }}> no dinheiro ou pix</div>
                         </div>
                     </>
