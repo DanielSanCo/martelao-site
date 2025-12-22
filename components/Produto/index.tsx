@@ -15,7 +15,7 @@ const Produto = ({ img, nome, codigo, preco }: Props) => {
     const { produto } = router.query;
     const [copiado, setCopiado] = useState(false);
 
-    const numero = '5521969703202';
+    const numero = '5521970595032';
     const mensagem = `Olá, gostaria de saber sobre o produto: ${nome}, cód: ${codigo}`;
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
