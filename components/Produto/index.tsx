@@ -49,7 +49,13 @@ const Produto = ({ img, nome, codigo, preco }: Props) => {
                 </div>
 
             </a>
-            <div className={styles.nome}>{nome}</div>
+            <a
+                href={`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(nome)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <div className={styles.nome}>{nome}</div>
+            </a>
             <div className={styles.infoArea}>
 
                 <div className={styles.itemNome}>
