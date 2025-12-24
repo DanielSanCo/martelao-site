@@ -16,7 +16,7 @@ const Produto = ({ img, nome, codigo, preco }: Props) => {
     const [copiado, setCopiado] = useState(false);
 
     const numero = '5521970595032';
-    const mensagem = `Olá, gostaria de saber sobre o produto: ${nome}, cód: ${codigo}`;
+    const mensagem = `Olá, gostaria de saber informações de preço do produto: ${nome}; código: ${codigo}`;
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
     const nomeProduto = typeof produto === 'string' ? decodeURIComponent(produto) : '';

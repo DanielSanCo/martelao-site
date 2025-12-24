@@ -1875,6 +1875,12 @@ const Produtos = [
         price: 0
     },
     {
+        nome: 'cuba inox pad 40x34x110mm rasa forminox',
+        codigo: '17875',
+        img: "https://http2.mlstatic.com/D_NQ_NP_903096-MLA93506922529_092025-O.webp",
+        price: 0
+    },
+    {
         nome: 'cuba inox pad 460 x 300 x 140mm n1 media',
         codigo: '22892',
         img: "https://padovani.vtexassets.com/arquivos/ids/171151/Cuba-para-Cozinha-em-Aco-Inox-430-Plus-N1-46x30x14cm-com-Furo-de-Valvula-de-3-1-2---GhelPlus1.jpg?v=636724305585200000",
@@ -2502,13 +2508,13 @@ const Produtos = [
         img: 'https://americanas.vtexassets.com/arquivos/ids/9197846/7506128593_3_xlarge.jpg?v=638752470390970000'
     },
     {
-        nome: '',
-        codigo: '',
-        img: ''
+        nome: 'cadeira sem braco sauipe - topgrao',
+        codigo: '27511',
+        img: 'https://casafreitas2.vteximg.com.br/arquivos/ids/277557-1000-1000/013664A000008-cadeira-plastico-branco-sauipe-top-mil--3-.jpg?v=638651987413130000'
     },
     {
-        nome: '',
-        codigo: '',
+        nome: 'cuba inox pad ',
+        codigo: '22893',
         img: ''
     },
     {

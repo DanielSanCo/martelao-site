@@ -113,7 +113,6 @@ const NavBar = () => {
                                     <a href={`/produto/${encodeURIComponent(prod.nome)}`}>
                                         <img src={prod.img} alt={prod.nome} width={40} />
                                         <div>{prod.nome}</div>
-                                        <div>- R$ {prod.price}</div>
                                     </a>
                                 </li>
                             </div>
