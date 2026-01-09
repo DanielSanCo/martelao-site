@@ -75,7 +75,7 @@ const Produto = ({ img, nome, codigo, preco }: Props) => {
                         <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="" style={{ height: '30px', margin: '4px' }} />
                     </a>
                 </div>
-                {preco <= 0 ?
+                {preco > 0 ?
                     <>
                         <div style={{ padding: '5px', fontSize: '13px', fontWeight: 'bold' }}>R$ {(preco * 0.9).toFixed(2)} no crédito</div>
                         <div style={{ display: 'Flex', alignItems: 'center' }}>

@@ -9,6 +9,7 @@ type Produto = {
     desc: string;
     categoria: string;
     price?: string;
+    encarte?: string;
 };
 
 const NavBar = () => {
